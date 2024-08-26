@@ -1,11 +1,15 @@
 [
   {
-    "natLang": [],
+    "natLang": ["give me all works", 
+      "show me all of the works", 
+      "just list the works"],
     "oql": "get works",
     "query": {}
   },
   {
-    "natLang": [],
+    "natLang": ["give me all works that are journal articles", 
+      "could I please have all works that are articles", 
+      "I want to see all works where the work type is article"],
     "oql": "get works where type is types/article;",
     "query": {
       "filters": [
@@ -30,7 +34,9 @@
     }
   },
   {
-    "natLang": [],
+    "natLang": ["show me everything from 2020", 
+      "Could I see all works from 2020?", 
+      "I want to see all works that were published in 2020"],
     "oql": "get works where publication_year is 2020;",
     "query": {
       "filters": [
@@ -55,7 +61,9 @@
     }
   },
   {
-    "natLang": [],
+    "natLang": ["show me all articles and their open access status, country, continent, if they are from the Global South, source type, if they are in an OA source, and language", 
+      "I want to see all articles with the following columns: open access, country, continent, Global South, source type, OA source, and language", 
+      "give me everything with variables that show the country and continent, indicator if it is global south, whether it is open access, whether the source is open access, and the language"],
     "oql": "get works where type is article; return open access, Country, Continent, from Global South, source type, in OA source, language;",
     "query": {
       "filters": [
@@ -91,7 +99,9 @@
     }
   },
   {
-    "natLang": [],
+    "natLang": ["show me everything that is not an article", 
+      "I want to see all works that are not articles", 
+      "give me all works that are not articles"],
     "oql": "get works where type is not article;",
     "query": {
       "filters": [
