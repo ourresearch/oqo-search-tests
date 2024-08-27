@@ -61,9 +61,9 @@
     }
   },
   {
-    "natLang": ["show me all articles and their open access status, country, continent, if they are from the Global South, source type, if they are in an OA source, and language", 
-      "I want to see all articles with the following columns: open access, country, continent, Global South, source type, OA source, and language", 
-      "give me everything with variables that show the country and continent, indicator if it is global south, whether it is open access, whether the source is open access, and the language"],
+    "natLang": ["show me all articles and their open access status, country, continent, if they are from the Global South, source type, if they are in an OA source",
+      "I want to see all articles with the following columns: open access, country, continent, Global South, source type, and OA source",
+      "give me everything with variables that show the country and continent, indicator if it is global south, whether it is open access, and whether the source is open access"],
     "oql": "get works where type is article; return open access, Country, Continent, from Global South, source type, in OA source, language;",
     "query": {
       "filters": [
@@ -99,6 +99,49 @@
     }
   },
   {
+    "natLang": ["show me works from Harvard, of type article that were published since 2018"],
+    "oql": "get works where authorships.institutions.id is institutions/I4210120667 and type is types/article and publication_year is greater than 2018;",
+    "query": {
+        "filters": [
+            {
+            "id": "br_1",
+            "subjectEntity": "works",
+            "type": "branch",
+            "operator": "and",
+            "children": [
+                "leaf_1",
+                "leaf_2",
+                "leaf_3"
+            ]
+            },
+            {
+            "id": "leaf_1",
+            "subjectEntity": "works",
+            "type": "leaf",
+            "operator": "is",
+            "column_id": "authorships.institutions.id",
+            "value": "institutions/I136199984"
+            },
+            {
+            "id": "leaf_2",
+            "subjectEntity": "works",
+            "type": "leaf",
+            "operator": "is",
+            "column_id": "type",
+            "value": "types/article"
+            },
+            {
+            "id": "leaf_3",
+            "subjectEntity": "works",
+            "type": "leaf",
+            "operator": "is greater than",
+            "column_id": "publication_year",
+            "value": 2018
+            }
+        ]
+    }
+  },
+  {
     "natLang": ["show me everything that is not an article", 
       "I want to see all works that are not articles", 
       "give me all works that are not articles"],
@@ -122,6 +165,77 @@
           "column_id": "type",
           "value": "types/article"
         }
+      ]
+    }
+  },
+  {
+    "natLang": ["show me works that are open access status that is gold, published in 2020 and associated with Canada.",
+      "I want to see all works that are gold open access, published in 2020, and associated with Canada."],
+    "oql": "get works where open_access.oa_status is gold and publication_year is 2020 and authorships.countries is countries/CA;",
+    "query": {
+      "filters": [
+        {
+          "id": "br_1",
+          "subjectEntity": "works",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_1",
+            "leaf_2",
+            "leaf_3"
+          ]
+        },
+        {
+          "id": "leaf_1",
+          "subjectEntity": "works",
+          "type": "leaf",
+          "operator": "is",
+          "column_id": "open_access.oa_status",
+          "value": "gold"
+        },
+        {
+          "id": "leaf_2",
+          "subjectEntity": "works",
+          "type": "leaf",
+          "operator": "is",
+          "column_id": "publication_year",
+          "value": 2020
+        },
+        {
+          "id": "leaf_3",
+          "subjectEntity": "works",
+          "type": "leaf",
+          "operator": "is",
+          "column_id": "authorships.countries",
+          "value": "countries/CA"
+        }
+      ]
+    }
+  },
+  {
+    "natLang": ["show me all institutions"],
+    "oql": "get works; summarize by institutions;",
+    "query": {
+      "summarize_by": "institutions",
+        "return_columns": [
+            "display_name",
+            "ids.ror"
+        ]
+    }
+  },
+  {
+    "natLang": ["show me all authors sorted by their works count"],
+    "oql": "get works; summarize by authors; sort by count(works) desc;",
+    "query": {
+      "summarize_by": "authors",
+      "sort_by": {
+        "column_id": "count(works)",
+        "direction": "desc"
+      },
+      "return_columns": [
+        "display_name",
+        "ids.ror",
+        "count(works)"
       ]
     }
   },
