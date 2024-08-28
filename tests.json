@@ -14,7 +14,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "please get me the work with id 1775749144", 
+      "get me https://openalex.org/works/W1775749144"
+    ],
     "oql": "get works where id is 1775749144",
     "query": {
       "filters": [
@@ -48,7 +51,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "please show me all works except for 1775749144"
+    ],
     "oql": "get works where id is not 1775749144",
     "query": {
       "filters": [
@@ -83,7 +88,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "show me the work for doi 10.1006/abio.1976.9999",
+      "doi is 10.1006/abio.1976.9999", 
+      "doi.org/10.1006/abio.1976.9999"
+    ],
     "oql": "get works where doi is 10.1006/abio.1976.9999 ",
     "query": {
       "filters": [
@@ -118,7 +127,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me works that have the topic of Biblical Studies and Christian Theology", 
+      "Biblical Studies and Christian Theology topic"
+    ],
     "oql": "get works where topic is T10362",
     "query": {
       "filters": [
@@ -152,7 +164,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "all works that talk about Diagnosis", 
+      "show me works that are tagged with the Diagnosis keyword"
+    ],
     "oql": "get works where keyword is Diagnosis",
     "query": {
       "filters": [
@@ -186,7 +201,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Sociology and Political Science works", 
+      "all works in the subfield of Sociology and Political Science"
+    ],
     "oql": "get works where subfield is Sociology and Political Science",
     "query": {
       "filters": [
@@ -220,7 +238,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "all works that are in the field of Medicine", 
+      "show me works in the Medicine field"
+    ],
     "oql": "get works where field is Medicine",
     "query": {
       "filters": [
@@ -254,7 +275,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "all works that are in the domain of Physical Sciences", 
+      "show me works in the Physical Sciences domain"
+    ],
     "oql": "get works where domain is Physical Sciences",
     "query": {
       "filters": [
@@ -288,7 +312,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "get all works from U of Michigan",
+      "show me works from University of Michigan in Ann Arbor",
+      "University of Michigan works"
+    ],
     "oql": "get works where institution is University of Michigan\u2013Ann Arbor",
     "query": {
       "filters": [
@@ -322,7 +350,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works that are cited exactly 50 times",
+      "I would like all works that have been cited 50 times exactly"
+    ],
     "oql": "get works where cited_by_count is 50",
     "query": {
       "filters": [
@@ -356,7 +387,12 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works that are cited less than 25 times",
+      "I would like all works that have been cited less than 25 times",
+      "any and all works that have been cited less than 25 times",
+      "show all papers where the cited_by_count is less than 25"
+    ],
     "oql": "get works where cited_by_count is less than 25",
     "query": {
       "filters": [
@@ -391,7 +427,12 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works that are cited more than 90 times",
+      "I would like all works that have been cited more than 90 times",
+      "any and all works that have been cited more than 90 times",
+      "show all papers where the cited_by_count is greater than 90"
+    ],
     "oql": "get works where cited_by_count is greater than 90",
     "query": {
       "filters": [
@@ -426,7 +467,14 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "get works for Universidad La República in Chile",
+      "trabajos de la Universidad La República en Chile",
+      "trabajos de la Universidad La República",
+      "everything for ROR id 05xs36f43",
+      "all works for ror 05xs36f43"
+
+    ],
     "oql": "get works where ror is 05xs36f43",
     "query": {
       "filters": [
@@ -460,7 +508,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "get works for author with id A5010062957",
+      "all works for A5010062957",
+      "works for author A5010062957"
+    ],
     "oql": "get works where author is authors/A5010062957",
     "query": {
       "filters": [
@@ -494,7 +546,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "get works for author with orcid 0000-0002-4465-7034",
+      "all works for 0000-0002-4465-7034",
+      "works for author 0000-0002-4465-7034"
+    ],
     "oql": "get works where orcid is 0000-0002-4465-7034",
     "query": {
       "filters": [
@@ -528,7 +584,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "show me works where the title is 'PROTEIN MEASUREMENT WITH THE FOLIN PHENOL REAGENT'",
+      "works with title PROTEIN MEASUREMENT WITH THE FOLIN PHENOL REAGENT"
+    ],
     "oql": "get works where title is PROTEIN MEASUREMENT WITH THE FOLIN PHENOL REAGENT",
     "query": {
       "filters": [
@@ -562,7 +621,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "show me all open access works",
+      "everything open access",
+      "I would really like to see all works that are open access"
+    ],
     "oql": "get works where open_access.is_oa is true",
     "query": {
       "filters": [
@@ -596,7 +659,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "show me all works with a green open access status",
+      "everything with a green open access status",
+      "I would really like to see all works that have a green open access status"
+    ],
     "oql": "get works where open_access.oa_status is green",
     "query": {
       "filters": [
@@ -631,7 +698,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "show me all works where the APC charge is exactly $1500",
+      "works where the APC charge is $1500"
+    ],
     "oql": "get works where apc_paid.value_usd is 1500",
     "query": {
       "filters": [
@@ -665,7 +735,13 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "show me all works where the APC charge is greater than $1000",
+      "works where the APC charge is greater than 1000",
+      "APC charge over $1000",
+      "APC over $1000",
+      "APC over 1000"
+    ],
     "oql": "get works where apc_paid.value_usd is greater than 1000",
     "query": {
       "filters": [
@@ -700,7 +776,13 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "show me all works where the APC charge is less than $3000",
+      "works where the APC charge is less than 3000",
+      "APC charge under $3000",
+      "APC under $3000",
+      "APC under 3000"
+    ],
     "oql": "get works where apc_paid.value_usd is less than 3000",
     "query": {
       "filters": [
@@ -735,7 +817,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "all works from authors in Germany",
+      "show me works from German authors",
+      "works where author is German"
+    ],
     "oql": "get works where authorships.countries is countries/DE",
     "query": {
       "filters": [
@@ -769,7 +855,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "all works from authors in Africa",
+      "show me works from Africa",
+      "African works"
+    ],
     "oql": "get works where authorships.institutions.continent is continents/Q15",
     "query": {
       "filters": [
@@ -803,7 +893,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "all works from authors in the Global South",
+      "show me works from the Global South",
+      "Global South works"
+    ],
     "oql": "get works where authorships.institutions.is_global_south is true",
     "query": {
       "filters": [
@@ -871,7 +965,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Pubmed works",
+      "all works from Pubmed",
+      "get me all works that have Pubmed as a source"
+    ],
     "oql": "get works where primary_location.source.id is PubMed",
     "query": {
       "filters": [
