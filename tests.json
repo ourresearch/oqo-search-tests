@@ -2108,7 +2108,8 @@
         ],
         "description": "Nested filter (cited_by_count AND language) OR open_access.oa_status",
         "tags": [
-            "works_nested_filter"
+            "works_nested_filter",
+            "operator"
         ]
     },
     {
@@ -2169,7 +2170,8 @@
         ],
         "description": "Nested filter authorships.institutions.type AND (primary_location.source.type OR apc_sum)",
         "tags": [
-            "works_nested_filter"
+            "works_nested_filter",
+            "operator"
         ]
     },
     {
@@ -2230,7 +2232,8 @@
         ],
         "description": "Nested filter sustainable_development_goals.id OR (grants.funder AND publication_year)",
         "tags": [
-            "works_nested_filter"
+            "works_nested_filter",
+            "operator"
         ]
     },
     {
@@ -2309,7 +2312,8 @@
         ],
         "description": "Nested filter (referenced_works AND authorships.institutions.continent) OR (primary_location.source.issn AND cited_by_count)",
         "tags": [
-            "works_nested_filter"
+            "works_nested_filter",
+            "operator"
         ]
     },
     {
@@ -2937,6 +2941,7 @@
         ],
         "description": "Filter works then summarize",
         "tags": [
+            "operator",
             "works_filter_summarize_all"
         ]
     },
@@ -3005,6 +3010,7 @@
         ],
         "description": "Filter works then summarize",
         "tags": [
+            "operator",
             "works_filter_summarize_all"
         ]
     },
@@ -3733,6 +3739,7 @@
         ],
         "description": "Summarize by and filter entity",
         "tags": [
+            "operator",
             "summarize_by_entity_filter"
         ]
     },
@@ -4005,6 +4012,7 @@
         ],
         "description": "Summarize by and filter entity",
         "tags": [
+            "operator",
             "summarize_by_entity_filter"
         ]
     },
@@ -4116,6 +4124,7 @@
         ],
         "description": "Summarize by and filter entity (2 filters)",
         "tags": [
+            "operator",
             "summarize_by_entity_two_filter"
         ]
     },
@@ -4460,6 +4469,7 @@
         ],
         "description": "Summarize by and filter entity (2 filters)",
         "tags": [
+            "operator",
             "summarize_by_entity_two_filter"
         ]
     },
@@ -4804,6 +4814,7 @@
         ],
         "description": "Summarize by and filter entity (2 filters)",
         "tags": [
+            "operator",
             "summarize_by_entity_two_filter"
         ]
     },
@@ -4881,7 +4892,8 @@
         ],
         "description": "Filter works then summarize by entity",
         "tags": [
-            "works_filter_summarize_by_entity"
+            "works_filter_summarize_by_entity",
+            "operator"
         ]
     },
     {
@@ -4949,7 +4961,8 @@
         ],
         "description": "Filter works then summarize by entity",
         "tags": [
-            "works_filter_summarize_by_entity"
+            "works_filter_summarize_by_entity",
+            "operator"
         ]
     },
     {
@@ -5051,7 +5064,8 @@
         ],
         "description": "Filter works then summarize by entity",
         "tags": [
-            "works_filter_summarize_by_entity"
+            "works_filter_summarize_by_entity",
+            "operator"
         ]
     },
     {
@@ -5187,891 +5201,1000 @@
         ],
         "description": "Filter works then summarize by entity",
         "tags": [
-            "works_filter_summarize_by_entity"
+            "works_filter_summarize_by_entity",
+            "operator"
         ]
     },
     {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by authors where has_orcid is true",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "authors",
             "filters": [
-              {
-                "id": "br_authFilt",
-                "subjectEntity": "authors",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_authOrcid"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "authors",
+                "filters": [
+                    {
+                        "id": "br_authFilt",
+                        "subjectEntity": "authors",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_authOrcid"
+                        ]
+                    },
+                    {
+                        "id": "leaf_authOrcid",
+                        "subjectEntity": "authors",
+                        "type": "leaf",
+                        "column_id": "has_orcid",
+                        "operator": "is",
+                        "value": true
+                    }
                 ]
-              },
-              {
-                "id": "leaf_authOrcid",
-                "subjectEntity": "authors",
-                "type": "leaf",
-                "column_id": "has_orcid",
-                "operator": "is",
-                "value": true
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by concepts where level is 1",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "concepts",
             "filters": [
-              {
-                "id": "br_concFilt",
-                "subjectEntity": "concepts",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_concLevel"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "concepts",
+                "filters": [
+                    {
+                        "id": "br_concFilt",
+                        "subjectEntity": "concepts",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_concLevel"
+                        ]
+                    },
+                    {
+                        "id": "leaf_concLevel",
+                        "subjectEntity": "concepts",
+                        "type": "leaf",
+                        "column_id": "level",
+                        "operator": "is",
+                        "value": 1
+                    }
                 ]
-              },
-              {
-                "id": "leaf_concLevel",
-                "subjectEntity": "concepts",
-                "type": "leaf",
-                "column_id": "level",
-                "operator": "is",
-                "value": 1
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by countries where id is countries/US",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "countries",
             "filters": [
-              {
-                "id": "br_countFilt",
-                "subjectEntity": "countries",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_countId"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "countries",
+                "filters": [
+                    {
+                        "id": "br_countFilt",
+                        "subjectEntity": "countries",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_countId"
+                        ]
+                    },
+                    {
+                        "id": "leaf_countId",
+                        "subjectEntity": "countries",
+                        "type": "leaf",
+                        "column_id": "id",
+                        "operator": "is",
+                        "value": "countries/US"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_countId",
-                "subjectEntity": "countries",
-                "type": "leaf",
-                "column_id": "id",
-                "operator": "is",
-                "value": "countries/US"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by domains where display_name is Social Sciences",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "domains",
             "filters": [
-              {
-                "id": "br_domainFilt",
-                "subjectEntity": "domains",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_domainName"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "domains",
+                "filters": [
+                    {
+                        "id": "br_domainFilt",
+                        "subjectEntity": "domains",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_domainName"
+                        ]
+                    },
+                    {
+                        "id": "leaf_domainName",
+                        "subjectEntity": "domains",
+                        "type": "leaf",
+                        "column_id": "display_name",
+                        "operator": "is",
+                        "value": "Social Sciences"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_domainName",
-                "subjectEntity": "domains",
-                "type": "leaf",
-                "column_id": "display_name",
-                "operator": "is",
-                "value": "Social Sciences"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by fields where domain is domains/2",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "fields",
             "filters": [
-              {
-                "id": "br_fieldFilt",
-                "subjectEntity": "fields",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_fieldDomain"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "fields",
+                "filters": [
+                    {
+                        "id": "br_fieldFilt",
+                        "subjectEntity": "fields",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_fieldDomain"
+                        ]
+                    },
+                    {
+                        "id": "leaf_fieldDomain",
+                        "subjectEntity": "fields",
+                        "type": "leaf",
+                        "column_id": "domain",
+                        "operator": "is",
+                        "value": "domains/2"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_fieldDomain",
-                "subjectEntity": "fields",
-                "type": "leaf",
-                "column_id": "domain",
-                "operator": "is",
-                "value": "domains/2"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by funders where country_code is US",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "funders",
             "filters": [
-              {
-                "id": "br_funderFilt",
-                "subjectEntity": "funders",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_funderCountry"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "funders",
+                "filters": [
+                    {
+                        "id": "br_funderFilt",
+                        "subjectEntity": "funders",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_funderCountry"
+                        ]
+                    },
+                    {
+                        "id": "leaf_funderCountry",
+                        "subjectEntity": "funders",
+                        "type": "leaf",
+                        "column_id": "country_code",
+                        "operator": "is",
+                        "value": "US"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_funderCountry",
-                "subjectEntity": "funders",
-                "type": "leaf",
-                "column_id": "country_code",
-                "operator": "is",
-                "value": "US"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by institution-types where display_name is education",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "institution-types",
             "filters": [
-              {
-                "id": "br_instTypeFilt",
-                "subjectEntity": "institution-types",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_instTypeName"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "institution-types",
+                "filters": [
+                    {
+                        "id": "br_instTypeFilt",
+                        "subjectEntity": "institution-types",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_instTypeName"
+                        ]
+                    },
+                    {
+                        "id": "leaf_instTypeName",
+                        "subjectEntity": "institution-types",
+                        "type": "leaf",
+                        "column_id": "display_name",
+                        "operator": "is",
+                        "value": "education"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_instTypeName",
-                "subjectEntity": "institution-types",
-                "type": "leaf",
-                "column_id": "display_name",
-                "operator": "is",
-                "value": "education"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by institutions where type is education",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "institutions",
             "filters": [
-              {
-                "id": "br_instFilt",
-                "subjectEntity": "institutions",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_instType"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "institutions",
+                "filters": [
+                    {
+                        "id": "br_instFilt",
+                        "subjectEntity": "institutions",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_instType"
+                        ]
+                    },
+                    {
+                        "id": "leaf_instType",
+                        "subjectEntity": "institutions",
+                        "type": "leaf",
+                        "column_id": "type",
+                        "operator": "is",
+                        "value": "education"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_instType",
-                "subjectEntity": "institutions",
-                "type": "leaf",
-                "column_id": "type",
-                "operator": "is",
-                "value": "education"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by keywords where count(works) is greater than 1000",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "keywords",
             "filters": [
-              {
-                "id": "br_keywordFilt",
-                "subjectEntity": "keywords",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_keywordCount"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "keywords",
+                "filters": [
+                    {
+                        "id": "br_keywordFilt",
+                        "subjectEntity": "keywords",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_keywordCount"
+                        ]
+                    },
+                    {
+                        "id": "leaf_keywordCount",
+                        "subjectEntity": "keywords",
+                        "type": "leaf",
+                        "column_id": "count(works)",
+                        "operator": "is greater than",
+                        "value": 1000
+                    }
                 ]
-              },
-              {
-                "id": "leaf_keywordCount",
-                "subjectEntity": "keywords",
-                "type": "leaf",
-                "column_id": "count(works)",
-                "operator": "is greater than",
-                "value": 1000
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by languages where id is languages/en",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "languages",
             "filters": [
-              {
-                "id": "br_langFilt",
-                "subjectEntity": "languages",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_langId"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "languages",
+                "filters": [
+                    {
+                        "id": "br_langFilt",
+                        "subjectEntity": "languages",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_langId"
+                        ]
+                    },
+                    {
+                        "id": "leaf_langId",
+                        "subjectEntity": "languages",
+                        "type": "leaf",
+                        "column_id": "id",
+                        "operator": "is",
+                        "value": "languages/en"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_langId",
-                "subjectEntity": "languages",
-                "type": "leaf",
-                "column_id": "id",
-                "operator": "is",
-                "value": "languages/en"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by licenses where display_name is CC-BY",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "licenses",
             "filters": [
-              {
-                "id": "br_licenseFilt",
-                "subjectEntity": "licenses",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_licenseName"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "licenses",
+                "filters": [
+                    {
+                        "id": "br_licenseFilt",
+                        "subjectEntity": "licenses",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_licenseName"
+                        ]
+                    },
+                    {
+                        "id": "leaf_licenseName",
+                        "subjectEntity": "licenses",
+                        "type": "leaf",
+                        "column_id": "display_name",
+                        "operator": "is",
+                        "value": "CC-BY"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_licenseName",
-                "subjectEntity": "licenses",
-                "type": "leaf",
-                "column_id": "display_name",
-                "operator": "is",
-                "value": "CC-BY"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by publishers where country_code is US",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "publishers",
             "filters": [
-              {
-                "id": "br_pubFilt",
-                "subjectEntity": "publishers",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_pubCountry"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "publishers",
+                "filters": [
+                    {
+                        "id": "br_pubFilt",
+                        "subjectEntity": "publishers",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_pubCountry"
+                        ]
+                    },
+                    {
+                        "id": "leaf_pubCountry",
+                        "subjectEntity": "publishers",
+                        "type": "leaf",
+                        "column_id": "country_code",
+                        "operator": "is",
+                        "value": "US"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_pubCountry",
-                "subjectEntity": "publishers",
-                "type": "leaf",
-                "column_id": "country_code",
-                "operator": "is",
-                "value": "US"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by sdgs where id is sdgs/3",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "sdgs",
             "filters": [
-              {
-                "id": "br_sdgFilt",
-                "subjectEntity": "sdgs",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_sdgId"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "sdgs",
+                "filters": [
+                    {
+                        "id": "br_sdgFilt",
+                        "subjectEntity": "sdgs",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_sdgId"
+                        ]
+                    },
+                    {
+                        "id": "leaf_sdgId",
+                        "subjectEntity": "sdgs",
+                        "type": "leaf",
+                        "column_id": "id",
+                        "operator": "is",
+                        "value": "sdgs/3"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_sdgId",
-                "subjectEntity": "sdgs",
-                "type": "leaf",
-                "column_id": "id",
-                "operator": "is",
-                "value": "sdgs/3"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by source-types where display_name is journal",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "source-types",
             "filters": [
-              {
-                "id": "br_sourceTypeFilt",
-                "subjectEntity": "source-types",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_sourceTypeName"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "source-types",
+                "filters": [
+                    {
+                        "id": "br_sourceTypeFilt",
+                        "subjectEntity": "source-types",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_sourceTypeName"
+                        ]
+                    },
+                    {
+                        "id": "leaf_sourceTypeName",
+                        "subjectEntity": "source-types",
+                        "type": "leaf",
+                        "column_id": "display_name",
+                        "operator": "is",
+                        "value": "journal"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_sourceTypeName",
-                "subjectEntity": "source-types",
-                "type": "leaf",
-                "column_id": "display_name",
-                "operator": "is",
-                "value": "journal"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by sources where is_oa is true",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "sources",
             "filters": [
-              {
-                "id": "br_sourceFilt",
-                "subjectEntity": "sources",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_sourceOa"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "sources",
+                "filters": [
+                    {
+                        "id": "br_sourceFilt",
+                        "subjectEntity": "sources",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_sourceOa"
+                        ]
+                    },
+                    {
+                        "id": "leaf_sourceOa",
+                        "subjectEntity": "sources",
+                        "type": "leaf",
+                        "column_id": "is_oa",
+                        "operator": "is",
+                        "value": true
+                    }
                 ]
-              },
-              {
-                "id": "leaf_sourceOa",
-                "subjectEntity": "sources",
-                "type": "leaf",
-                "column_id": "is_oa",
-                "operator": "is",
-                "value": true
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by subfields where field is fields/33",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "subfields",
             "filters": [
-              {
-                "id": "br_subfieldFilt",
-                "subjectEntity": "subfields",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_subfieldField"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "subfields",
+                "filters": [
+                    {
+                        "id": "br_subfieldFilt",
+                        "subjectEntity": "subfields",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_subfieldField"
+                        ]
+                    },
+                    {
+                        "id": "leaf_subfieldField",
+                        "subjectEntity": "subfields",
+                        "type": "leaf",
+                        "column_id": "field",
+                        "operator": "is",
+                        "value": "fields/33"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_subfieldField",
-                "subjectEntity": "subfields",
-                "type": "leaf",
-                "column_id": "field",
-                "operator": "is",
-                "value": "fields/33"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by topics where field is fields/33",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "topics",
             "filters": [
-              {
-                "id": "br_topicFilt",
-                "subjectEntity": "topics",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_topicField"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "topics",
+                "filters": [
+                    {
+                        "id": "br_topicFilt",
+                        "subjectEntity": "topics",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_topicField"
+                        ]
+                    },
+                    {
+                        "id": "leaf_topicField",
+                        "subjectEntity": "topics",
+                        "type": "leaf",
+                        "column_id": "field",
+                        "operator": "is",
+                        "value": "fields/33"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_topicField",
-                "subjectEntity": "topics",
-                "type": "leaf",
-                "column_id": "field",
-                "operator": "is",
-                "value": "fields/33"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },
-      {
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
+    {
         "natLang": [],
         "oql": "get works where publication_year is greater than 2020; summarize by types where display_name is article",
         "query": {
-          "filters": [
-            {
-              "id": "br_dgxnLp",
-              "subjectEntity": "works",
-              "type": "branch",
-              "operator": "and",
-              "children": [
-                "leaf_nM4vws"
-              ]
-            },
-            {
-              "id": "leaf_nM4vws",
-              "subjectEntity": "works",
-              "type": "leaf",
-              "column_id": "publication_year",
-              "operator": "is greater than",
-              "value": 2020
-            }
-          ],
-          "summarize_by": {
-            "entity": "types",
             "filters": [
-              {
-                "id": "br_typeFilt",
-                "subjectEntity": "types",
-                "type": "branch",
-                "operator": "and",
-                "children": [
-                  "leaf_typeName"
+                {
+                    "id": "br_dgxnLp",
+                    "subjectEntity": "works",
+                    "type": "branch",
+                    "operator": "and",
+                    "children": [
+                        "leaf_nM4vws"
+                    ]
+                },
+                {
+                    "id": "leaf_nM4vws",
+                    "subjectEntity": "works",
+                    "type": "leaf",
+                    "column_id": "publication_year",
+                    "operator": "is greater than",
+                    "value": 2020
+                }
+            ],
+            "summarize_by": {
+                "entity": "types",
+                "filters": [
+                    {
+                        "id": "br_typeFilt",
+                        "subjectEntity": "types",
+                        "type": "branch",
+                        "operator": "and",
+                        "children": [
+                            "leaf_typeName"
+                        ]
+                    },
+                    {
+                        "id": "leaf_typeName",
+                        "subjectEntity": "types",
+                        "type": "leaf",
+                        "column_id": "display_name",
+                        "operator": "is",
+                        "value": "article"
+                    }
                 ]
-              },
-              {
-                "id": "leaf_typeName",
-                "subjectEntity": "types",
-                "type": "leaf",
-                "column_id": "display_name",
-                "operator": "is",
-                "value": "article"
-              }
-            ]
-          }
+            }
         },
-        "ignore": ["return_columns", "sort_by"],
-        "tags": ["works_filter_summarize_by_entity_filter", "operator"]
-      },    
+        "ignore": [
+            "return_columns",
+            "sort_by"
+        ],
+        "tags": [
+            "works_filter_summarize_by_entity_filter",
+            "operator"
+        ]
+    },
     {
         "natLang": [],
         "oql": "get works; summarize by authors; sort by count(works) desc;",
