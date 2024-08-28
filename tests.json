@@ -422,6 +422,8 @@
         "description": "single filter (cited_by_count is greater than)",
         "tags": [
             "works_single_filter",
+            "operator",
+            "operator",
             "operator"
         ]
     },
@@ -696,6 +698,7 @@
         "description": "single filter (apc_paid.value_usd is greater than)",
         "tags": [
             "works_single_filter",
+            "operator",
             "operator"
         ]
     },
@@ -1242,6 +1245,7 @@
         "description": "single filter (publication_year is greater than)",
         "tags": [
             "works_single_filter",
+            "operator",
             "operator"
         ]
     },
@@ -1346,6 +1350,7 @@
         "description": "single filter (apc_sum is greater than)",
         "tags": [
             "works_single_filter",
+            "operator",
             "operator"
         ]
     },
@@ -1594,7 +1599,8 @@
         ],
         "description": "2 filters (publication_year is greater than, type is) with AND",
         "tags": [
-            "works_two_filter"
+            "works_two_filter",
+            "operator"
         ]
     },
     {
@@ -1637,7 +1643,8 @@
         ],
         "description": "2 filters (cited_by_count is greater than, primary_location.source.type is) with AND",
         "tags": [
-            "works_two_filter"
+            "works_two_filter",
+            "operator"
         ]
     },
     {
@@ -1723,7 +1730,8 @@
         ],
         "description": "2 filters (apc_sum is less than, grants.funder is) with AND",
         "tags": [
-            "works_two_filter"
+            "works_two_filter",
+            "operator"
         ]
     },
     {
@@ -1938,7 +1946,8 @@
         ],
         "description": "2 filters (cited_by_count is greater than, grants.award_id is) with OR",
         "tags": [
-            "works_two_filter"
+            "works_two_filter",
+            "operator"
         ]
     },
     {
@@ -1981,7 +1990,8 @@
         ],
         "description": "2 filters (authorships.countries is, apc_sum is less than) with OR",
         "tags": [
-            "works_two_filter"
+            "works_two_filter",
+            "operator"
         ]
     },
     {
