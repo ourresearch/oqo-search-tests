@@ -2318,7 +2318,7 @@
     },
     {
         "natLang": [],
-        "oql": "get works",
+        "oql": "get works; sort by display_name asc",
         "query": {
             "sort_by": {
                 "column_id": "display_name",
@@ -2337,7 +2337,7 @@
     },
     {
         "natLang": [],
-        "oql": "get works",
+        "oql": "get works; sort by display_name desc",
         "query": {
             "sort_by": {
                 "column_id": "display_name",
@@ -2356,7 +2356,7 @@
     },
     {
         "natLang": [],
-        "oql": "get works",
+        "oql": "get works; sort by cited_by_count asc",
         "query": {
             "sort_by": {
                 "column_id": "cited_by_count",
@@ -2375,7 +2375,7 @@
     },
     {
         "natLang": [],
-        "oql": "get works",
+        "oql": "get works; sort by cited_by_count desc",
         "query": {
             "sort_by": {
                 "column_id": "cited_by_count",
@@ -2394,7 +2394,7 @@
     },
     {
         "natLang": [],
-        "oql": "get works",
+        "oql": "get works; sort by publication_year asc",
         "query": {
             "sort_by": {
                 "column_id": "publication_year",
@@ -2413,7 +2413,7 @@
     },
     {
         "natLang": [],
-        "oql": "get works",
+        "oql": "get works; sort by publication_year desc",
         "query": {
             "sort_by": {
                 "column_id": "publication_year",
