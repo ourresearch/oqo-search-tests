@@ -78,8 +78,8 @@
         ],
         "description": "single filter (id is not)",
         "tags": [
-            "works_single_filter",
-            "operator"
+            "operator",
+            "works_single_filter"
         ]
     },
     {
@@ -386,8 +386,8 @@
         ],
         "description": "single filter (cited_by_count is less than)",
         "tags": [
-            "works_single_filter",
-            "operator"
+            "operator",
+            "works_single_filter"
         ]
     },
     {
@@ -421,10 +421,8 @@
         ],
         "description": "single filter (cited_by_count is greater than)",
         "tags": [
-            "works_single_filter",
             "operator",
-            "operator",
-            "operator"
+            "works_single_filter"
         ]
     },
     {
@@ -697,9 +695,8 @@
         ],
         "description": "single filter (apc_paid.value_usd is greater than)",
         "tags": [
-            "works_single_filter",
             "operator",
-            "operator"
+            "works_single_filter"
         ]
     },
     {
@@ -733,8 +730,8 @@
         ],
         "description": "single filter (apc_paid.value_usd is less than)",
         "tags": [
-            "works_single_filter",
-            "operator"
+            "operator",
+            "works_single_filter"
         ]
     },
     {
@@ -1244,9 +1241,8 @@
         ],
         "description": "single filter (publication_year is greater than)",
         "tags": [
-            "works_single_filter",
             "operator",
-            "operator"
+            "works_single_filter"
         ]
     },
     {
@@ -1280,8 +1276,8 @@
         ],
         "description": "single filter (publication_year is less than)",
         "tags": [
-            "works_single_filter",
-            "operator"
+            "operator",
+            "works_single_filter"
         ]
     },
     {
@@ -1349,9 +1345,8 @@
         ],
         "description": "single filter (apc_sum is greater than)",
         "tags": [
-            "works_single_filter",
             "operator",
-            "operator"
+            "works_single_filter"
         ]
     },
     {
@@ -1385,8 +1380,8 @@
         ],
         "description": "single filter (apc_sum is less than)",
         "tags": [
-            "works_single_filter",
-            "operator"
+            "operator",
+            "works_single_filter"
         ]
     },
     {
