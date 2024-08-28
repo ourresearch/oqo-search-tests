@@ -42,7 +42,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (id is)"
+        "description": "single filter (id is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -73,7 +76,11 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (id is not)"
+        "description": "single filter (id is not)",
+        "tags": [
+            "works_single_filter",
+            "operator"
+        ]
     },
     {
         "natLang": [],
@@ -105,7 +112,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (doi is)"
+        "description": "single filter (doi is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -136,7 +146,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (topic is)"
+        "description": "single filter (topic is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -167,7 +180,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (keyword is)"
+        "description": "single filter (keyword is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -198,7 +214,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (subfield is)"
+        "description": "single filter (subfield is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -229,7 +248,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (field is)"
+        "description": "single filter (field is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -260,7 +282,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (domain is)"
+        "description": "single filter (domain is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -291,7 +316,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (institution is)"
+        "description": "single filter (institution is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -322,7 +350,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (cited_by_count is)"
+        "description": "single filter (cited_by_count is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -353,7 +384,11 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (cited_by_count is less than)"
+        "description": "single filter (cited_by_count is less than)",
+        "tags": [
+            "works_single_filter",
+            "operator"
+        ]
     },
     {
         "natLang": [],
@@ -384,7 +419,11 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (cited_by_count is greater than)"
+        "description": "single filter (cited_by_count is greater than)",
+        "tags": [
+            "works_single_filter",
+            "operator"
+        ]
     },
     {
         "natLang": [],
@@ -415,7 +454,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (ror is)"
+        "description": "single filter (ror is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -446,7 +488,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (author is)"
+        "description": "single filter (author is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -477,7 +522,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (orcid is)"
+        "description": "single filter (orcid is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -508,7 +556,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (title is)"
+        "description": "single filter (title is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -539,7 +590,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (is_oa is)"
+        "description": "single filter (is_oa is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -571,7 +625,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (open_access.oa_status is)"
+        "description": "single filter (open_access.oa_status is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -602,7 +659,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (apc_paid.value_usd is)"
+        "description": "single filter (apc_paid.value_usd is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -633,7 +693,11 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (apc_paid.value_usd is greater than)"
+        "description": "single filter (apc_paid.value_usd is greater than)",
+        "tags": [
+            "works_single_filter",
+            "operator"
+        ]
     },
     {
         "natLang": [],
@@ -664,7 +728,11 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (apc_paid.value_usd is less than)"
+        "description": "single filter (apc_paid.value_usd is less than)",
+        "tags": [
+            "works_single_filter",
+            "operator"
+        ]
     },
     {
         "natLang": [],
@@ -695,7 +763,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (authorships.countries is)"
+        "description": "single filter (authorships.countries is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -726,7 +797,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (authorships.institutions.continent is)"
+        "description": "single filter (authorships.institutions.continent is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -757,7 +831,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (authorships.institutions.is_global_south is)"
+        "description": "single filter (authorships.institutions.is_global_south is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -788,7 +865,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (primary_location.source.id is)"
+        "description": "single filter (primary_location.source.id is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -819,7 +899,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (primary_location.source.id is, display name in oql)"
+        "description": "single filter (primary_location.source.id is, display name in oql)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -850,7 +933,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (primary_location.source.issn is)"
+        "description": "single filter (primary_location.source.issn is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -881,7 +967,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (primary_location.source.type is)"
+        "description": "single filter (primary_location.source.type is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -912,7 +1001,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (primary_location.source.is_in_doaj is)"
+        "description": "single filter (primary_location.source.is_in_doaj is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -943,7 +1035,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (primary_location.source.is_oa is)"
+        "description": "single filter (primary_location.source.is_oa is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -974,7 +1069,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (type is)"
+        "description": "single filter (type is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1005,7 +1103,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (funder is, display_name in oql)"
+        "description": "single filter (funder is, display_name in oql)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1036,7 +1137,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (funder is)"
+        "description": "single filter (funder is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1067,7 +1171,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (grants.award_id is)"
+        "description": "single filter (grants.award_id is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1098,7 +1205,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (publication_year is)"
+        "description": "single filter (publication_year is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1129,7 +1239,11 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (publication_year is greater than)"
+        "description": "single filter (publication_year is greater than)",
+        "tags": [
+            "works_single_filter",
+            "operator"
+        ]
     },
     {
         "natLang": [],
@@ -1160,7 +1274,11 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (publication_year is less than)"
+        "description": "single filter (publication_year is less than)",
+        "tags": [
+            "works_single_filter",
+            "operator"
+        ]
     },
     {
         "natLang": [],
@@ -1191,7 +1309,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (apc_sum is)"
+        "description": "single filter (apc_sum is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1222,7 +1343,11 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (apc_sum is greater than)"
+        "description": "single filter (apc_sum is greater than)",
+        "tags": [
+            "works_single_filter",
+            "operator"
+        ]
     },
     {
         "natLang": [],
@@ -1253,7 +1378,11 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (apc_sum is less than)"
+        "description": "single filter (apc_sum is less than)",
+        "tags": [
+            "works_single_filter",
+            "operator"
+        ]
     },
     {
         "natLang": [],
@@ -1284,7 +1413,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (language is, code in oql)"
+        "description": "single filter (language is, code in oql)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1315,7 +1447,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (language is, display_name in oql)"
+        "description": "single filter (language is, display_name in oql)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1346,7 +1481,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (sustainable_development_goals.id is, code in oql)"
+        "description": "single filter (sustainable_development_goals.id is, code in oql)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1377,7 +1515,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (sustainable_development_goals.id is, display_name in oql)"
+        "description": "single filter (sustainable_development_goals.id is, display_name in oql)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1408,7 +1549,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "single filter (referenced_works is)"
+        "description": "single filter (referenced_works is)",
+        "tags": [
+            "works_single_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1448,7 +1592,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "2 filters (publication_year is greater than, type is) with AND"
+        "description": "2 filters (publication_year is greater than, type is) with AND",
+        "tags": [
+            "works_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1488,7 +1635,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "2 filters (cited_by_count is greater than, primary_location.source.type is) with AND"
+        "description": "2 filters (cited_by_count is greater than, primary_location.source.type is) with AND",
+        "tags": [
+            "works_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1528,7 +1678,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "2 filters (language is, open_access.oa_status is) with AND"
+        "description": "2 filters (language is, open_access.oa_status is) with AND",
+        "tags": [
+            "works_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1568,7 +1721,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "2 filters (apc_sum is less than, grants.funder is) with AND"
+        "description": "2 filters (apc_sum is less than, grants.funder is) with AND",
+        "tags": [
+            "works_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1608,7 +1764,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "2 filters (sustainable_development_goals.id is, authorships.institutions.type is) with AND"
+        "description": "2 filters (sustainable_development_goals.id is, authorships.institutions.type is) with AND",
+        "tags": [
+            "works_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1648,7 +1807,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "2 filters (referenced_works is, primary_location.source.issn is) with OR"
+        "description": "2 filters (referenced_works is, primary_location.source.issn is) with OR",
+        "tags": [
+            "works_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1688,7 +1850,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "2 filters (publication_year is, authorships.institutions.continent is) with OR"
+        "description": "2 filters (publication_year is, authorships.institutions.continent is) with OR",
+        "tags": [
+            "works_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1728,7 +1893,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "2 filters (type is not, primary_location.source.id is) with OR"
+        "description": "2 filters (type is not, primary_location.source.id is) with OR",
+        "tags": [
+            "works_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1768,7 +1936,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "2 filters (cited_by_count is greater than, grants.award_id is) with OR"
+        "description": "2 filters (cited_by_count is greater than, grants.award_id is) with OR",
+        "tags": [
+            "works_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1808,7 +1979,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "2 filters (authorships.countries is, apc_sum is less than) with OR"
+        "description": "2 filters (authorships.countries is, apc_sum is less than) with OR",
+        "tags": [
+            "works_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1866,7 +2040,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "Nested filter (publication_year OR type) AND authorships.author.id"
+        "description": "Nested filter (publication_year OR type) AND authorships.author.id",
+        "tags": [
+            "works_nested_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1924,7 +2101,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "Nested filter (cited_by_count AND language) OR open_access.oa_status"
+        "description": "Nested filter (cited_by_count AND language) OR open_access.oa_status",
+        "tags": [
+            "works_nested_filter"
+        ]
     },
     {
         "natLang": [],
@@ -1982,7 +2162,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "Nested filter authorships.institutions.type AND (primary_location.source.type OR apc_sum)"
+        "description": "Nested filter authorships.institutions.type AND (primary_location.source.type OR apc_sum)",
+        "tags": [
+            "works_nested_filter"
+        ]
     },
     {
         "natLang": [],
@@ -2040,7 +2223,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "Nested filter sustainable_development_goals.id OR (grants.funder AND publication_year)"
+        "description": "Nested filter sustainable_development_goals.id OR (grants.funder AND publication_year)",
+        "tags": [
+            "works_nested_filter"
+        ]
     },
     {
         "natLang": [],
@@ -2116,7 +2302,10 @@
             "sort_by",
             "summarize_by"
         ],
-        "description": "Nested filter (referenced_works AND authorships.institutions.continent) OR (primary_location.source.issn AND cited_by_count)"
+        "description": "Nested filter (referenced_works AND authorships.institutions.continent) OR (primary_location.source.issn AND cited_by_count)",
+        "tags": [
+            "works_nested_filter"
+        ]
     },
     {
         "natLang": [],
@@ -2132,7 +2321,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Sort by display_name ascending"
+        "description": "Sort by display_name ascending",
+        "tags": [
+            "sort_works"
+        ]
     },
     {
         "natLang": [],
@@ -2148,7 +2340,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Sort by display_name descending"
+        "description": "Sort by display_name descending",
+        "tags": [
+            "sort_works"
+        ]
     },
     {
         "natLang": [],
@@ -2164,7 +2359,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Sort by cited_by_count ascending"
+        "description": "Sort by cited_by_count ascending",
+        "tags": [
+            "sort_works"
+        ]
     },
     {
         "natLang": [],
@@ -2180,7 +2378,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Sort by cited_by_count descending"
+        "description": "Sort by cited_by_count descending",
+        "tags": [
+            "sort_works"
+        ]
     },
     {
         "natLang": [],
@@ -2196,7 +2397,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Sort by publication_year ascending"
+        "description": "Sort by publication_year ascending",
+        "tags": [
+            "sort_works"
+        ]
     },
     {
         "natLang": [],
@@ -2212,7 +2416,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Sort by publication_year descending"
+        "description": "Sort by publication_year descending",
+        "tags": [
+            "sort_works"
+        ]
     },
     {
         "natLang": [],
@@ -2227,7 +2434,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return display_name column"
+        "description": "Return display_name column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2242,7 +2452,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return publication_year column"
+        "description": "Return publication_year column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2257,7 +2470,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return type column"
+        "description": "Return type column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2272,7 +2488,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return cited_by_count column"
+        "description": "Return cited_by_count column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2287,7 +2506,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return primary_topic.field.id column"
+        "description": "Return primary_topic.field.id column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2302,7 +2524,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return doi column"
+        "description": "Return doi column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2317,7 +2542,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return primary_topic.id column"
+        "description": "Return primary_topic.id column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2332,7 +2560,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return keywords.id column"
+        "description": "Return keywords.id column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2347,7 +2578,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return primary_topic.domain.id column"
+        "description": "Return primary_topic.domain.id column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2362,7 +2596,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return open_access.is_oa column"
+        "description": "Return open_access.is_oa column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2377,7 +2614,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return open_access.oa_status column"
+        "description": "Return open_access.oa_status column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2392,7 +2632,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return authorships.institutions.continent column"
+        "description": "Return authorships.institutions.continent column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2407,7 +2650,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return primary_location.source.id column"
+        "description": "Return primary_location.source.id column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2422,7 +2668,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return primary_location.source.is_in_doaj column"
+        "description": "Return primary_location.source.is_in_doaj column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2437,7 +2686,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return language column"
+        "description": "Return language column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2452,7 +2704,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return authorships.countries column"
+        "description": "Return authorships.countries column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2467,7 +2722,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return institutions.is_global_south column"
+        "description": "Return institutions.is_global_south column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2482,7 +2740,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return primary_location.source.type column"
+        "description": "Return primary_location.source.type column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2497,7 +2758,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return primary_topic.subfield.id column"
+        "description": "Return primary_topic.subfield.id column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2512,7 +2776,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return authorships.author.id column"
+        "description": "Return authorships.author.id column",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2546,7 +2813,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Return all columns"
+        "description": "Return all columns",
+        "tags": [
+            "return_columns"
+        ]
     },
     {
         "natLang": [],
@@ -2565,7 +2835,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Sort by column not included in return"
+        "description": "Sort by column not included in return",
+        "tags": [
+            "sort_works"
+        ]
     },
     {
         "natLang": [],
@@ -2585,7 +2858,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Sort by column not included in return"
+        "description": "Sort by column not included in return",
+        "tags": [
+            "sort_works"
+        ]
     },
     {
         "natLang": [],
@@ -2605,7 +2881,10 @@
             "filters",
             "summarize_by"
         ],
-        "description": "Sort by column not included in return"
+        "description": "Sort by column not included in return",
+        "tags": [
+            "sort_works"
+        ]
     },
     {
         "natLang": [],
@@ -2617,19 +2896,10 @@
             "filters",
             "return_columns"
         ],
-        "description": "Summarize all"
-    },
-    {
-        "natLang": [],
-        "oql": "get works; summarize;",
-        "query": {
-            "summarize_by": "all"
-        },
-        "ignore": [
-            "filters",
-            "return_columns"
-        ],
-        "description": "Summarize all"
+        "description": "Summarize all",
+        "tags": [
+            "works_filter_summarize_all"
+        ]
     },
     {
         "natLang": [],
@@ -2660,7 +2930,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize"
+        "description": "Filter works then summarize",
+        "tags": [
+            "works_filter_summarize_all"
+        ]
     },
     {
         "natLang": [],
@@ -2691,7 +2964,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize"
+        "description": "Filter works then summarize",
+        "tags": [
+            "works_filter_summarize_all"
+        ]
     },
     {
         "natLang": [],
@@ -2722,7 +2998,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize"
+        "description": "Filter works then summarize",
+        "tags": [
+            "works_filter_summarize_all"
+        ]
     },
     {
         "natLang": [],
@@ -2753,7 +3032,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize"
+        "description": "Filter works then summarize",
+        "tags": [
+            "works_filter_summarize_all"
+        ]
     },
     {
         "natLang": [],
@@ -2784,7 +3066,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize"
+        "description": "Filter works then summarize",
+        "tags": [
+            "works_filter_summarize_all"
+        ]
     },
     {
         "natLang": [],
@@ -2797,7 +3082,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2810,7 +3098,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2823,7 +3114,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2836,7 +3130,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2849,7 +3146,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2862,7 +3162,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2875,7 +3178,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2888,7 +3194,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2901,7 +3210,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2914,7 +3226,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2927,7 +3242,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2940,7 +3258,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2953,7 +3274,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2966,7 +3290,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2979,7 +3306,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -2992,7 +3322,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -3005,7 +3338,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -3018,7 +3354,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -3031,7 +3370,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -3044,7 +3386,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize works by entity"
+        "description": "Summarize works by entity",
+        "tags": [
+            "summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -3075,7 +3420,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3106,7 +3454,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3137,7 +3488,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3168,7 +3522,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3199,7 +3556,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3230,7 +3590,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3261,7 +3624,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3292,7 +3658,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3323,7 +3692,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3354,7 +3726,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3385,7 +3760,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3416,7 +3794,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3447,7 +3828,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3478,7 +3862,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3509,7 +3896,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3540,7 +3930,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3571,7 +3964,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3602,7 +3998,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3633,7 +4032,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3664,7 +4066,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity"
+        "description": "Summarize by and filter entity",
+        "tags": [
+            "summarize_by_entity_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3704,7 +4109,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3744,7 +4152,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3784,7 +4195,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3824,7 +4238,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3864,7 +4281,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3904,7 +4324,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3944,7 +4367,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -3984,7 +4410,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -4024,7 +4453,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -4064,7 +4496,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -4104,7 +4539,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -4144,7 +4582,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -4184,7 +4625,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -4224,7 +4668,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -4264,7 +4711,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -4304,7 +4754,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -4344,7 +4797,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -4384,7 +4840,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Summarize by and filter entity (2 filters)"
+        "description": "Summarize by and filter entity (2 filters)",
+        "tags": [
+            "summarize_by_entity_two_filter"
+        ]
     },
     {
         "natLang": [],
@@ -4415,7 +4874,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize by entity"
+        "description": "Filter works then summarize by entity",
+        "tags": [
+            "works_filter_summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -4446,7 +4908,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize by entity"
+        "description": "Filter works then summarize by entity",
+        "tags": [
+            "works_filter_summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -4477,7 +4942,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize by entity"
+        "description": "Filter works then summarize by entity",
+        "tags": [
+            "works_filter_summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -4508,7 +4976,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize by entity"
+        "description": "Filter works then summarize by entity",
+        "tags": [
+            "works_filter_summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -4539,7 +5010,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize by entity"
+        "description": "Filter works then summarize by entity",
+        "tags": [
+            "works_filter_summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -4570,7 +5044,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize by entity"
+        "description": "Filter works then summarize by entity",
+        "tags": [
+            "works_filter_summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -4601,7 +5078,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize by entity"
+        "description": "Filter works then summarize by entity",
+        "tags": [
+            "works_filter_summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -4632,7 +5112,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize by entity"
+        "description": "Filter works then summarize by entity",
+        "tags": [
+            "works_filter_summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -4663,7 +5146,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize by entity"
+        "description": "Filter works then summarize by entity",
+        "tags": [
+            "works_filter_summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -4694,7 +5180,10 @@
             "return_columns",
             "sort_by"
         ],
-        "description": "Filter works then summarize by entity"
+        "description": "Filter works then summarize by entity",
+        "tags": [
+            "works_filter_summarize_by_entity"
+        ]
     },
     {
         "natLang": [],
@@ -4710,7 +5199,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4726,7 +5218,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4742,7 +5237,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4758,7 +5256,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4774,7 +5275,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4790,7 +5294,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4806,7 +5313,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4822,7 +5332,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4838,7 +5351,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4854,7 +5370,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4870,7 +5389,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4886,7 +5408,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4902,7 +5427,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4918,7 +5446,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4934,7 +5465,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4950,7 +5484,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4966,7 +5503,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [],
@@ -4982,7 +5522,10 @@
             "return_columns",
             "filters"
         ],
-        "description": "Summarize by entity sort"
+        "description": "Summarize by entity sort",
+        "tags": [
+            "summarize_by_entity_sort"
+        ]
     },
     {
         "natLang": [
