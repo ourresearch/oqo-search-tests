@@ -1753,7 +1753,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show all works from journals that are cited more than 100 tiems",
+      "works from journals with more than 100 citations",
+      "List works where the source is a journal and the work's citation count is more than 100"
+    ],
     "oql": "get works where cited_by_count is greater than 100 and primary_location.source.type is journal",
     "query": {
       "filters": [
@@ -1797,7 +1801,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Get all english language works that are gold open access",
+      "Show me all works that are in English and are gold open access",
+      "Gold open access works that are in English"
+    ],
     "oql": "get works where language is English and open_access.oa_status is gold",
     "query": {
       "filters": [
@@ -1840,7 +1848,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me all works where the APC total is less than 2000 and are from the National Science Foundation",
+      "works from the National Science Foundation with an APC total less than 2000"
+    ],
     "oql": "get works where apc_sum is less than 2000 and grants.funder is National Science Foundation",
     "query": {
       "filters": [
@@ -1884,7 +1895,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Works where the sdg is good health and well being from an educational institution",
+      "Show me all works from educational institutions that are related to the SDG for Good health and wellbeing",
+      "Works from educational institutions that are related to good health and well-being"
+    ],
     "oql": "get works where sustainable_development_goals.id is Good health and well-being and authorships.institutions.type is education",
     "query": {
       "filters": [
@@ -1927,7 +1942,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "All works that reference W1775749144 or have a source ISSN of 0140-6736"
+    ],
     "oql": "get works where referenced_works is works/W1775749144 or primary_location.source.issn is 0140-6736",
     "query": {
       "filters": [
@@ -1970,7 +1987,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Get all works that were either published in 2022 or were authored in Europe"
+    ],
     "oql": "get works where publication_year is 2022 or authorships.institutions.continent is continents/Q46",
     "query": {
       "filters": [
