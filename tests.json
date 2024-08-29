@@ -1670,7 +1670,7 @@
   },
   {
     "natLang": [
-      "Get all works that reference W1775749144",
+      "Get all works that reference W1775749144"
     ],
     "oql": "get works where referenced_works is works/W1775749144",
     "query": {
