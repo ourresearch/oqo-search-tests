@@ -1003,7 +1003,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "source ISSN of 0931-7597"
+    ],
     "oql": "get works where primary_location.source.issn is 0931-7597",
     "query": {
       "filters": [
@@ -1037,7 +1039,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works where the source is a journal"
+    ],
     "oql": "get works where primary_location.source.type is journal",
     "query": {
       "filters": [
@@ -1071,7 +1075,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works in doaj", 
+      "show all works where the source is in DOAJ"
+    ],
     "oql": "get works where primary_location.source.is_in_doaj is true",
     "query": {
       "filters": [
@@ -1105,7 +1112,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show works where the primary location is open access"
+    ],
     "oql": "get works where primary_location.source.is_oa is true",
     "query": {
       "filters": [
@@ -1139,7 +1148,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Get all works that are articles",
+      "show me everythihng where the work type is article"
+    ],
     "oql": "get works where type is article",
     "query": {
       "filters": [
@@ -1173,7 +1185,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "get all works from the National Natural Science Foundation of China",
+      "all works from the NSFC in China",
+      "please show me all works funded by the National Natural Science Foundation of China"
+    ],
     "oql": "get works where grants.funder is National Natural Science Foundation of China",
     "query": {
       "filters": [
@@ -1207,7 +1223,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works from funder F4320321001"
+    ],
     "oql": "get works where grants.funder is funders/F4320321001",
     "query": {
       "filters": [
@@ -1241,7 +1259,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "give me the work where the grant id is R01GM126567-01"
+    ],
     "oql": "get works where grants.award_id is R01GM126567-01",
     "query": {
       "filters": [
@@ -1275,7 +1295,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Works from 2020",
+      "show me all works from 2020",
+      "any work that is published in 2020"
+    ],
     "oql": "get works where publication_year is 2020",
     "query": {
       "filters": [
@@ -1309,7 +1333,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Works published after 2019",
+      "Please show me everything that has been published since 2020",
+      "all works from 2020 onwards"
+    ],
     "oql": "get works where publication_year is greater than 2020",
     "query": {
       "filters": [
@@ -1344,7 +1372,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "All works published before 2024",
+      "Please show me everything that has been published before 2024",
+      "Everything before 2024"
+    ],
     "oql": "get works where publication_year is less than 2024",
     "query": {
       "filters": [
@@ -1379,7 +1411,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works where the APC total is 10,000"
+    ],
     "oql": "get works where apc_sum is 10000",
     "query": {
       "filters": [
@@ -1413,7 +1447,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works where the apc sum is greater than 20,000",
+      "show me all works where the apc total is greater than 20000"
+    ],
     "oql": "get works where apc_sum is greater than 20000",
     "query": {
       "filters": [
@@ -1448,7 +1485,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works where the apc sum is less than 35000",
+      "show me all works where the apc total is less than 35,000"
+    ],
     "oql": "get works where apc_sum is less than 35000",
     "query": {
       "filters": [
@@ -1517,7 +1557,12 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me all works that are in English",
+      "works in English",
+      "all works in English",
+      "works where the language is English"
+    ],
     "oql": "get works where language is English",
     "query": {
       "filters": [
@@ -1551,7 +1596,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works for SDG 3"
+    ],
     "oql": "get works where sustainable_development_goals.id is sdgs/3",
     "query": {
       "filters": [
@@ -1585,7 +1632,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "everything connected to the SDG for Good health and well-being",
+      "please get everything work that has the SDG Good health and well-being"
+    ],
     "oql": "get works where sustainable_development_goals.id is Good health and well-being",
     "query": {
       "filters": [
@@ -1619,7 +1669,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Get all works that reference W1775749144",
+    ],
     "oql": "get works where referenced_works is works/W1775749144",
     "query": {
       "filters": [
@@ -1653,7 +1705,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Please get all works since 2020 that are articles",
+      "Show me all articles since 2020",
+      "all articles from 2020 and on"
+    ],
     "oql": "get works where publication_year is greater than 2020 and type is article",
     "query": {
       "filters": [
