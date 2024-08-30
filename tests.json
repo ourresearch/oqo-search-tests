@@ -4417,40 +4417,6 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by subfields where field is fields/33",
-    "query": {
-      "filters": [
-        {
-          "id": "br_dgxnLp",
-          "subjectEntity": "subfields",
-          "type": "branch",
-          "operator": "and",
-          "children": [
-            "leaf_nM4vws"
-          ]
-        },
-        {
-          "id": "leaf_nM4vws",
-          "subjectEntity": "subfields",
-          "type": "leaf",
-          "column_id": "field",
-          "operator": "is",
-          "value": "fields/33"
-        }
-      ],
-      "summarize_by": "subfields"
-    },
-    "ignore": [
-      "return_columns",
-      "sort_by"
-    ],
-    "description": "Summarize by and filter entity",
-    "tags": [
-      "summarize_by_entity_filter"
-    ]
-  },
-  {
-    "natLang": [],
     "oql": "get works; summarize by authors where has_orcid is true and count(works) is greater than 10",
     "query": {
       "filters": [
