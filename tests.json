@@ -931,7 +931,12 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works in pubmed",
+      "all works in pubmed",
+      "pubmed works",
+      "pubmed"
+    ],
     "oql": "get works where primary_location.source.id is sources/S4306525036",
     "query": {
       "filters": [
@@ -1523,7 +1528,12 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works in English",
+      "english language",
+      "all works written in english",
+      "works where the language is English"
+    ],
     "oql": "get works where language is languages/en",
     "query": {
       "filters": [
@@ -2079,7 +2089,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "works cited more than 50 times, or the grant id is R01GM126567-01",
+      "either more than 50 citations or the grant id is R01GM126567-01"
+    ],
     "oql": "get works where cited_by_count is greater than 50 or grants.award_id is R01GM126567-01",
     "query": {
       "filters": [
@@ -2771,7 +2784,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Get all works and return the primary topic ID"
+    ],
     "oql": "get works return primary_topic.id",
     "query": {
       "return_columns": [
@@ -2789,7 +2804,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me the keyword id of every work",
+      "All works, show only keyword ID"
+    ],
     "oql": "get works return keywords.id",
     "query": {
       "return_columns": [
@@ -2807,7 +2825,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me the domain ID of every work",
+      "All works, show only domain ID"
+    ],
     "oql": "get works return primary_topic.domain.id",
     "query": {
       "return_columns": [
@@ -2825,7 +2846,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me the open access status of every work",
+      "All works, show only open access status"
+    ],
     "oql": "get works return open_access.is_oa",
     "query": {
       "return_columns": [
@@ -2843,25 +2867,10 @@
     ]
   },
   {
-    "natLang": [],
-    "oql": "get works return open_access.oa_status",
-    "query": {
-      "return_columns": [
-        "open_access.oa_status"
-      ]
-    },
-    "ignore": [
-      "sort_by",
-      "filters",
-      "summarize_by"
+    "natLang": [
+      "Show me the contentent of every work",
+      "get all works, just show the continent"
     ],
-    "description": "Return open_access.oa_status column",
-    "tags": [
-      "return_columns"
-    ]
-  },
-  {
-    "natLang": [],
     "oql": "get works return authorships.institutions.continent",
     "query": {
       "return_columns": [
@@ -2879,7 +2888,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me the source ID of every work",
+      "All works, show only source ID"
+    ],
     "oql": "get works return primary_location.source.id",
     "query": {
       "return_columns": [
@@ -2897,7 +2909,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me the DOAJ status of every work",
+      "All works, show only DOAJ status"
+    ],
     "oql": "get works return primary_location.source.is_in_doaj",
     "query": {
       "return_columns": [
@@ -2915,7 +2930,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me the language of every work",
+      "I want to see the language of every work"
+    ],
     "oql": "get works return language",
     "query": {
       "return_columns": [
@@ -2933,7 +2951,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me the countries where every work comes from",
+      "All works, show only countries"
+    ],
     "oql": "get works return authorships.countries",
     "query": {
       "return_columns": [
@@ -2951,7 +2972,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "For every work, show me whether it's from the global south or not",
+      "All works, show global south status"
+    ],
     "oql": "get works return institutions.is_global_south",
     "query": {
       "return_columns": [
@@ -2969,7 +2993,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me the source type of every work",
+      "All works, show only source type"
+    ],
     "oql": "get works return primary_location.source.type",
     "query": {
       "return_columns": [
@@ -2987,7 +3014,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me the subfield ID of every work",
+      "All works, show only subfield ID"
+    ],
     "oql": "get works return primary_topic.subfield.id",
     "query": {
       "return_columns": [
@@ -3005,7 +3035,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me the author ID of every work",
+      "I want to see all works, but I only want the author ID"
+    ],
     "oql": "get works return authorships.author.id",
     "query": {
       "return_columns": [
@@ -3023,7 +3056,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "for every work, get me these columns: display name, year, type, citations, field ID, DOI, topic ID, keyword ID, domain ID, OA status, open access color, continent, source ID, DOAJ status, language, countries, global south status, source type, subfield ID, and author ID"
+      "these columns for every work: display name, year, type, citations, field ID, DOI, topic ID, keyword ID, domain ID, OA status, open access color, continent, source ID, DOAJ status, language, countries, global south status, source type, subfield ID, and author ID"
+      "Columns: display name, year, type, citations, field ID, DOI, topic ID, keyword ID, domain ID, OA status, open access color, continent, source ID, DOAJ status, language, countries, global south status, source type, subfield ID, and author ID"
+    ],
     "oql": "get works return display_name, publication_year, type, cited_by_count, primary_topic.field.id, doi, primary_topic.id, keywords.id, primary_topic.domain.id, open_access.is_oa, open_access.oa_status, authorships.institutions.continent, primary_location.source.id, primary_location.source.is_in_doaj, language, authorships.countries, institutions.is_global_south, primary_location.source.type, primary_topic.subfield.id, authorships.author.id",
     "query": {
       "return_columns": [
@@ -3060,7 +3097,12 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Get title and year for every work",
+      "All works, show title and year",
+      "Works with columns for title and year",
+      "For all works, display title and year"
+    ],
     "oql": "get works; return display_name, publication_year",
     "query": {
       "return_columns": [
@@ -3082,7 +3124,12 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Get type, DOI, and language for every work",
+      "All works; show type, DOI, and language",
+      "Works with columns for type, DOI, and language",
+      "Columns: type, DOI, language"
+    ],
     "oql": "get works; return type, doi, language",
     "query": {
       "return_columns": [
@@ -3105,7 +3152,12 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Get the topic ID, whether the work is OA or not, and countries for every work",
+      "All works; show topic ID, OA status, and country",
+      "Works with columns for topic ID, open access, and countries",
+      "Columns: topic ID, OA, country"
+    ],
     "oql": "get works; return primary_topic.field.id, open_access.oa_status, authorships.countries",
     "query": {
       "return_columns": [
@@ -3128,7 +3180,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Summarize all works",
+      "Show me a one-line summary for all works in the database",
+      "Summarize"
+    ],
     "oql": "get works; summarize;",
     "query": {
       "summarize_by": "all"
@@ -3143,7 +3199,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Summarize all works published after 2020",
+      "Summarize all works from 2021 onwards",
+      "Summarize works newer than 2020"
+    ],
     "oql": "get works where publication_year is greater than 2020; summarize;",
     "query": {
       "filters": [
@@ -3178,7 +3238,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Summarize all works that are articles",
+      "Summarize all articles",
+      "Summarize articles"
+    ],
     "oql": "get works where type is article; summarize;",
     "query": {
       "filters": [
@@ -3212,7 +3276,13 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Summarize all works that have been cited more than 100 times",
+      "Get all works with more than 100 citations and summarize",
+      "Summarize works with more than 100 citations",
+      "Summarize works with over 100 citations",
+      "Summarize works with >100 citations",
+    ],
     "oql": "get works where cited_by_count is greater than 100; summarize;",
     "query": {
       "filters": [
@@ -3247,7 +3317,12 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+        "Summarize all works that are in English",
+        "Summarize all English-language works",
+        "Summarize English works",
+      "Get works in English and summarize them"
+    ],
     "oql": "get works where language is English; summarize;",
     "query": {
       "filters": [
@@ -3281,7 +3356,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Summarize all works that are gold open access",
+      "Summarize Gold OA works",
+      "Summarize works published in Gold OA journals",
+    ],
     "oql": "get works where open_access.oa_status is gold; summarize;",
     "query": {
       "filters": [
@@ -3315,7 +3394,13 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Summarize works by author",
+      "Author-level summary of works",
+      "Get authors",
+      "Authors",
+      "All authors"
+    ],
     "oql": "get works; summarize by authors;",
     "query": {
       "summarize_by": "authors"
@@ -3331,23 +3416,11 @@
     ]
   },
   {
-    "natLang": [],
-    "oql": "get works; summarize by concepts;",
-    "query": {
-      "summarize_by": "concepts"
-    },
-    "ignore": [
-      "filters",
-      "return_columns",
-      "sort_by"
+    "natLang": [
+        "Summarize  by continent",
+        "Get continents",
+        "Continents",
     ],
-    "description": "Summarize works by entity",
-    "tags": [
-      "summarize_by_entity"
-    ]
-  },
-  {
-    "natLang": [],
     "oql": "get works; summarize by continents;",
     "query": {
       "summarize_by": "continents"
@@ -3363,7 +3436,12 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+        "works by country",
+        "Get countries",
+        "Countries",
+      "How many works are from each country?"
+    ],
     "oql": "get works; summarize by countries;",
     "query": {
       "summarize_by": "countries"
@@ -3379,7 +3457,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+        "Summarize by domain",
+        "Get domains",
+        "Domains",
+    ],
     "oql": "get works; summarize by domains;",
     "query": {
       "summarize_by": "domains"
@@ -3395,7 +3477,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+        "Summarize works by field",
+        "Get fields",
+        "Fields",
+    ],
     "oql": "get works; summarize by fields;",
     "query": {
       "summarize_by": "fields"
@@ -3411,7 +3497,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+        "Summarize works by funder",
+        "Get funders",
+        "Funders",
+    ],
     "oql": "get works; summarize by funders;",
     "query": {
       "summarize_by": "funders"
@@ -3427,7 +3517,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What types of institutions are there?",
+      "Show me institution types"
+    ],
     "oql": "get works; summarize by institution-types;",
     "query": {
       "summarize_by": "institution-types"
@@ -3443,7 +3536,13 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+        "Show me all institutions",
+        "What institutions are there?",
+        "Get institutions",
+        "List institutions",
+        "Institutions",
+    ],
     "oql": "get works; summarize by institutions;",
     "query": {
       "summarize_by": "institutions"
@@ -3459,7 +3558,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "List keywords",
+        "Show me all keywords",
+        "Keywords"
+    ],
     "oql": "get works; summarize by keywords;",
     "query": {
       "summarize_by": "keywords"
@@ -3475,7 +3578,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+        "Get languages",
+        "Languages",
+        "List languages",
+    ],
     "oql": "get works; summarize by languages;",
     "query": {
       "summarize_by": "languages"
@@ -3491,7 +3598,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+        "What licenses do you have?",
+        "List licenses",
+        "Licenses",
+    ],
     "oql": "get works; summarize by licenses;",
     "query": {
       "summarize_by": "licenses"
@@ -3507,7 +3618,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+        "Get all the publishers",
+        "List all publishers",
+        "Publishers",
+    ],
     "oql": "get works; summarize by publishers;",
     "query": {
       "summarize_by": "publishers"
@@ -3523,7 +3638,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+        "Get all the UN sustainable development goals",
+        "SDGs",
+        "Sustainable Development Goals"
+    ],
     "oql": "get works; summarize by sdgs;",
     "query": {
       "summarize_by": "sdgs"
@@ -3539,7 +3658,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What soure types are there?",
+        "Show me source types",
+      "Source types"
+    ],
     "oql": "get works; summarize by source-types;",
     "query": {
       "summarize_by": "source-types"
@@ -3555,7 +3678,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are your sources?",
+      "List all the sources",
+      "Sources",
+    ],
     "oql": "get works; summarize by sources;",
     "query": {
       "summarize_by": "sources"
@@ -3571,7 +3698,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the subfields?",
+      "List all subfields",
+        "Subfields"
+    ],
     "oql": "get works; summarize by subfields;",
     "query": {
       "summarize_by": "subfields"
@@ -3587,7 +3718,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "list topics",
+      "Show me all topics",
+      "topics"
+    ],
     "oql": "get works; summarize by topics;",
     "query": {
       "summarize_by": "topics"
@@ -3603,7 +3738,13 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Count works by type",
+      "show me all work types",
+      "what are the types of works?",
+      "type",
+      "get types"
+    ],
     "oql": "get works; summarize by types;",
     "query": {
       "summarize_by": "types"
@@ -3619,23 +3760,11 @@
     ]
   },
   {
-    "natLang": [],
-    "oql": "get works; summarize by works;",
-    "query": {
-      "summarize_by": "works"
-    },
-    "ignore": [
-      "filters",
-      "return_columns",
-      "sort_by"
+    "natLang": [
+      "show me all authors with an ORCID",
+      "Get authors with ORCID",
+      "Authors with ORCID",
     ],
-    "description": "Summarize works by entity",
-    "tags": [
-      "summarize_by_entity"
-    ]
-  },
-  {
-    "natLang": [],
     "oql": "get works; summarize by authors where has_orcid is true",
     "query": {
       "filters": [
@@ -3658,74 +3787,6 @@
         }
       ],
       "summarize_by": "authors"
-    },
-    "ignore": [
-      "return_columns",
-      "sort_by"
-    ],
-    "description": "Summarize by and filter entity",
-    "tags": [
-      "summarize_by_entity_filter"
-    ]
-  },
-  {
-    "natLang": [],
-    "oql": "get works; summarize by concepts where level is 1",
-    "query": {
-      "filters": [
-        {
-          "id": "br_dgxnLp",
-          "subjectEntity": "concepts",
-          "type": "branch",
-          "operator": "and",
-          "children": [
-            "leaf_nM4vws"
-          ]
-        },
-        {
-          "id": "leaf_nM4vws",
-          "subjectEntity": "concepts",
-          "type": "leaf",
-          "column_id": "level",
-          "operator": "is",
-          "value": 1
-        }
-      ],
-      "summarize_by": "concepts"
-    },
-    "ignore": [
-      "return_columns",
-      "sort_by"
-    ],
-    "description": "Summarize by and filter entity",
-    "tags": [
-      "summarize_by_entity_filter"
-    ]
-  },
-  {
-    "natLang": [],
-    "oql": "get works; summarize by continents where display_name is Europe",
-    "query": {
-      "filters": [
-        {
-          "id": "br_dgxnLp",
-          "subjectEntity": "continents",
-          "type": "branch",
-          "operator": "and",
-          "children": [
-            "leaf_nM4vws"
-          ]
-        },
-        {
-          "id": "leaf_nM4vws",
-          "subjectEntity": "continents",
-          "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
-          "value": "Europe"
-        }
-      ],
-      "summarize_by": "continents"
     },
     "ignore": [
       "return_columns",
@@ -5664,22 +5725,22 @@
           "value": 2020
         },
         {
-            "id": "br_fieldFilt",
-            "subjectEntity": "fields",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_fieldDomain"
-            ]
-          },
-          {
-            "id": "leaf_fieldDomain",
-            "subjectEntity": "fields",
-            "type": "leaf",
-            "column_id": "domain",
-            "operator": "is",
-            "value": "domains/2"
-          }
+          "id": "br_fieldFilt",
+          "subjectEntity": "fields",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_fieldDomain"
+          ]
+        },
+        {
+          "id": "leaf_fieldDomain",
+          "subjectEntity": "fields",
+          "type": "leaf",
+          "column_id": "domain",
+          "operator": "is",
+          "value": "domains/2"
+        }
       ],
       "summarize_by": "fields"
     },
@@ -5715,22 +5776,22 @@
           "value": 2020
         },
         {
-            "id": "br_funderFilt",
-            "subjectEntity": "funders",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_funderCountry"
-            ]
-          },
-          {
-            "id": "leaf_funderCountry",
-            "subjectEntity": "funders",
-            "type": "leaf",
-            "column_id": "country_code",
-            "operator": "is",
-            "value": "US"
-          }
+          "id": "br_funderFilt",
+          "subjectEntity": "funders",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_funderCountry"
+          ]
+        },
+        {
+          "id": "leaf_funderCountry",
+          "subjectEntity": "funders",
+          "type": "leaf",
+          "column_id": "country_code",
+          "operator": "is",
+          "value": "US"
+        }
       ],
       "summarize_by": "funders"
     },
@@ -5765,23 +5826,23 @@
           "operator": "is greater than",
           "value": 2020
         },
-                  {
-            "id": "br_instTypeFilt",
-            "subjectEntity": "institution-types",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_instTypeName"
-            ]
-          },
-          {
-            "id": "leaf_instTypeName",
-            "subjectEntity": "institution-types",
-            "type": "leaf",
-            "column_id": "display_name",
-            "operator": "is",
-            "value": "education"
-          }
+        {
+          "id": "br_instTypeFilt",
+          "subjectEntity": "institution-types",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_instTypeName"
+          ]
+        },
+        {
+          "id": "leaf_instTypeName",
+          "subjectEntity": "institution-types",
+          "type": "leaf",
+          "column_id": "display_name",
+          "operator": "is",
+          "value": "education"
+        }
       ],
       "summarize_by": "institution-types"
     },
@@ -5817,22 +5878,22 @@
           "value": 2020
         },
         {
-            "id": "br_instFilt",
-            "subjectEntity": "institutions",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_instType"
-            ]
-          },
-          {
-            "id": "leaf_instType",
-            "subjectEntity": "institutions",
-            "type": "leaf",
-            "column_id": "type",
-            "operator": "is",
-            "value": "education"
-          }
+          "id": "br_instFilt",
+          "subjectEntity": "institutions",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_instType"
+          ]
+        },
+        {
+          "id": "leaf_instType",
+          "subjectEntity": "institutions",
+          "type": "leaf",
+          "column_id": "type",
+          "operator": "is",
+          "value": "education"
+        }
       ],
       "summarize_by": "institutions"
     },
@@ -5868,23 +5929,22 @@
           "value": 2020
         },
         {
-            "id": "br_keywordFilt",
-            "subjectEntity": "keywords",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_keywordCount"
-            ]
-          },
-          {
-            "id": "leaf_keywordCount",
-            "subjectEntity": "keywords",
-            "type": "leaf",
-            "column_id": "count(works)",
-            "operator": "is greater than",
-            "value": 1000
-          }
-
+          "id": "br_keywordFilt",
+          "subjectEntity": "keywords",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_keywordCount"
+          ]
+        },
+        {
+          "id": "leaf_keywordCount",
+          "subjectEntity": "keywords",
+          "type": "leaf",
+          "column_id": "count(works)",
+          "operator": "is greater than",
+          "value": 1000
+        }
       ],
       "summarize_by": "keywords"
     },
@@ -5919,23 +5979,23 @@
           "operator": "is greater than",
           "value": 2020
         },
-                  {
-            "id": "br_langFilt",
-            "subjectEntity": "languages",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_langId"
-            ]
-          },
-          {
-            "id": "leaf_langId",
-            "subjectEntity": "languages",
-            "type": "leaf",
-            "column_id": "id",
-            "operator": "is",
-            "value": "languages/en"
-          }
+        {
+          "id": "br_langFilt",
+          "subjectEntity": "languages",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_langId"
+          ]
+        },
+        {
+          "id": "leaf_langId",
+          "subjectEntity": "languages",
+          "type": "leaf",
+          "column_id": "id",
+          "operator": "is",
+          "value": "languages/en"
+        }
       ],
       "summarize_by": "languages"
     },
@@ -5970,24 +6030,23 @@
           "operator": "is greater than",
           "value": 2020
         },
-                  {
-            "id": "br_licenseFilt",
-            "subjectEntity": "licenses",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_licenseName"
-            ]
-          },
-          {
-            "id": "leaf_licenseName",
-            "subjectEntity": "licenses",
-            "type": "leaf",
-            "column_id": "display_name",
-            "operator": "is",
-            "value": "CC-BY"
-          }
-
+        {
+          "id": "br_licenseFilt",
+          "subjectEntity": "licenses",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_licenseName"
+          ]
+        },
+        {
+          "id": "leaf_licenseName",
+          "subjectEntity": "licenses",
+          "type": "leaf",
+          "column_id": "display_name",
+          "operator": "is",
+          "value": "CC-BY"
+        }
       ],
       "summarize_by": "licenses"
     },
@@ -6022,23 +6081,23 @@
           "operator": "is greater than",
           "value": 2020
         },
-                  {
-            "id": "br_pubFilt",
-            "subjectEntity": "publishers",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_pubCountry"
-            ]
-          },
-          {
-            "id": "leaf_pubCountry",
-            "subjectEntity": "publishers",
-            "type": "leaf",
-            "column_id": "country_code",
-            "operator": "is",
-            "value": "US"
-          }
+        {
+          "id": "br_pubFilt",
+          "subjectEntity": "publishers",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_pubCountry"
+          ]
+        },
+        {
+          "id": "leaf_pubCountry",
+          "subjectEntity": "publishers",
+          "type": "leaf",
+          "column_id": "country_code",
+          "operator": "is",
+          "value": "US"
+        }
       ],
       "summarize_by": "publishers"
     },
@@ -6073,23 +6132,23 @@
           "operator": "is greater than",
           "value": 2020
         },
-                  {
-            "id": "br_sdgFilt",
-            "subjectEntity": "sdgs",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_sdgId"
-            ]
-          },
-          {
-            "id": "leaf_sdgId",
-            "subjectEntity": "sdgs",
-            "type": "leaf",
-            "column_id": "id",
-            "operator": "is",
-            "value": "sdgs/3"
-          }
+        {
+          "id": "br_sdgFilt",
+          "subjectEntity": "sdgs",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_sdgId"
+          ]
+        },
+        {
+          "id": "leaf_sdgId",
+          "subjectEntity": "sdgs",
+          "type": "leaf",
+          "column_id": "id",
+          "operator": "is",
+          "value": "sdgs/3"
+        }
       ],
       "summarize_by": "sdgs"
     },
@@ -6125,22 +6184,22 @@
           "value": 2020
         },
         {
-            "id": "br_sourceTypeFilt",
-            "subjectEntity": "source-types",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_sourceTypeName"
-            ]
-          },
-          {
-            "id": "leaf_sourceTypeName",
-            "subjectEntity": "source-types",
-            "type": "leaf",
-            "column_id": "display_name",
-            "operator": "is",
-            "value": "journal"
-          }
+          "id": "br_sourceTypeFilt",
+          "subjectEntity": "source-types",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_sourceTypeName"
+          ]
+        },
+        {
+          "id": "leaf_sourceTypeName",
+          "subjectEntity": "source-types",
+          "type": "leaf",
+          "column_id": "display_name",
+          "operator": "is",
+          "value": "journal"
+        }
       ],
       "summarize_by": "source-types"
     },
@@ -6175,23 +6234,23 @@
           "operator": "is greater than",
           "value": 2020
         },
-                  {
-            "id": "br_sourceFilt",
-            "subjectEntity": "sources",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_sourceOa"
-            ]
-          },
-          {
-            "id": "leaf_sourceOa",
-            "subjectEntity": "sources",
-            "type": "leaf",
-            "column_id": "is_oa",
-            "operator": "is",
-            "value": true
-          }
+        {
+          "id": "br_sourceFilt",
+          "subjectEntity": "sources",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_sourceOa"
+          ]
+        },
+        {
+          "id": "leaf_sourceOa",
+          "subjectEntity": "sources",
+          "type": "leaf",
+          "column_id": "is_oa",
+          "operator": "is",
+          "value": true
+        }
       ],
       "summarize_by": "sources"
     },
@@ -6226,23 +6285,23 @@
           "operator": "is greater than",
           "value": 2020
         },
-                  {
-            "id": "br_subfieldFilt",
-            "subjectEntity": "subfields",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_subfieldField"
-            ]
-          },
-          {
-            "id": "leaf_subfieldField",
-            "subjectEntity": "subfields",
-            "type": "leaf",
-            "column_id": "field",
-            "operator": "is",
-            "value": "fields/33"
-          }
+        {
+          "id": "br_subfieldFilt",
+          "subjectEntity": "subfields",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_subfieldField"
+          ]
+        },
+        {
+          "id": "leaf_subfieldField",
+          "subjectEntity": "subfields",
+          "type": "leaf",
+          "column_id": "field",
+          "operator": "is",
+          "value": "fields/33"
+        }
       ],
       "summarize_by": "subfields"
     },
@@ -6278,23 +6337,22 @@
           "value": 2020
         },
         {
-            "id": "br_topicFilt",
-            "subjectEntity": "topics",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_topicField"
-            ]
-          },
-          {
-            "id": "leaf_topicField",
-            "subjectEntity": "topics",
-            "type": "leaf",
-            "column_id": "field",
-            "operator": "is",
-            "value": "fields/33"
-          }
-
+          "id": "br_topicFilt",
+          "subjectEntity": "topics",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_topicField"
+          ]
+        },
+        {
+          "id": "leaf_topicField",
+          "subjectEntity": "topics",
+          "type": "leaf",
+          "column_id": "field",
+          "operator": "is",
+          "value": "fields/33"
+        }
       ],
       "summarize_by": "topics"
     },
@@ -6330,22 +6388,22 @@
           "value": 2020
         },
         {
-            "id": "br_typeFilt",
-            "subjectEntity": "types",
-            "type": "branch",
-            "operator": "and",
-            "children": [
-              "leaf_typeName"
-            ]
-          },
-          {
-            "id": "leaf_typeName",
-            "subjectEntity": "types",
-            "type": "leaf",
-            "column_id": "display_name",
-            "operator": "is",
-            "value": "article"
-          }
+          "id": "br_typeFilt",
+          "subjectEntity": "types",
+          "type": "branch",
+          "operator": "and",
+          "children": [
+            "leaf_typeName"
+          ]
+        },
+        {
+          "id": "leaf_typeName",
+          "subjectEntity": "types",
+          "type": "leaf",
+          "column_id": "display_name",
+          "operator": "is",
+          "value": "article"
+        }
       ],
       "summarize_by": "types"
     },
