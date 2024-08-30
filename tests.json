@@ -3318,9 +3318,9 @@
   },
   {
     "natLang": [
-        "Summarize all works that are in English",
-        "Summarize all English-language works",
-        "Summarize English works",
+      "Summarize all works that are in English",
+      "Summarize all English-language works",
+      "Summarize English works",
       "Get works in English and summarize them"
     ],
     "oql": "get works where language is English; summarize;",
@@ -3417,9 +3417,9 @@
   },
   {
     "natLang": [
-        "Summarize  by continent",
-        "Get continents",
-        "Continents"
+      "Summarize  by continent",
+      "Get continents",
+      "Continents"
     ],
     "oql": "get works; summarize by continents;",
     "query": {
@@ -3437,9 +3437,9 @@
   },
   {
     "natLang": [
-        "works by country",
-        "Get countries",
-        "Countries",
+      "works by country",
+      "Get countries",
+      "Countries",
       "How many works are from each country?"
     ],
     "oql": "get works; summarize by countries;",
@@ -3458,9 +3458,9 @@
   },
   {
     "natLang": [
-        "Summarize by domain",
-        "Get domains",
-        "Domains"
+      "Summarize by domain",
+      "Get domains",
+      "Domains"
     ],
     "oql": "get works; summarize by domains;",
     "query": {
@@ -3478,9 +3478,9 @@
   },
   {
     "natLang": [
-        "Summarize works by field",
-        "Get fields",
-        "Fields"
+      "Summarize works by field",
+      "Get fields",
+      "Fields"
     ],
     "oql": "get works; summarize by fields;",
     "query": {
@@ -3498,9 +3498,9 @@
   },
   {
     "natLang": [
-        "Summarize works by funder",
-        "Get funders",
-        "Funders"
+      "Summarize works by funder",
+      "Get funders",
+      "Funders"
     ],
     "oql": "get works; summarize by funders;",
     "query": {
@@ -3537,11 +3537,11 @@
   },
   {
     "natLang": [
-        "Show me all institutions",
-        "What institutions are there?",
-        "Get institutions",
-        "List institutions",
-        "Institutions"
+      "Show me all institutions",
+      "What institutions are there?",
+      "Get institutions",
+      "List institutions",
+      "Institutions"
     ],
     "oql": "get works; summarize by institutions;",
     "query": {
@@ -3560,8 +3560,8 @@
   {
     "natLang": [
       "List keywords",
-        "Show me all keywords",
-        "Keywords"
+      "Show me all keywords",
+      "Keywords"
     ],
     "oql": "get works; summarize by keywords;",
     "query": {
@@ -3579,9 +3579,9 @@
   },
   {
     "natLang": [
-        "Get languages",
-        "Languages",
-        "List languages"
+      "Get languages",
+      "Languages",
+      "List languages"
     ],
     "oql": "get works; summarize by languages;",
     "query": {
@@ -3599,9 +3599,9 @@
   },
   {
     "natLang": [
-        "What licenses do you have?",
-        "List licenses",
-        "Licenses"
+      "What licenses do you have?",
+      "List licenses",
+      "Licenses"
     ],
     "oql": "get works; summarize by licenses;",
     "query": {
@@ -3619,9 +3619,9 @@
   },
   {
     "natLang": [
-        "Get all the publishers",
-        "List all publishers",
-        "Publishers"
+      "Get all the publishers",
+      "List all publishers",
+      "Publishers"
     ],
     "oql": "get works; summarize by publishers;",
     "query": {
@@ -3639,9 +3639,9 @@
   },
   {
     "natLang": [
-        "Get all the UN sustainable development goals",
-        "SDGs",
-        "Sustainable Development Goals"
+      "Get all the UN sustainable development goals",
+      "SDGs",
+      "Sustainable Development Goals"
     ],
     "oql": "get works; summarize by sdgs;",
     "query": {
@@ -3660,7 +3660,7 @@
   {
     "natLang": [
       "What soure types are there?",
-        "Show me source types",
+      "Show me source types",
       "Source types"
     ],
     "oql": "get works; summarize by source-types;",
@@ -3701,7 +3701,7 @@
     "natLang": [
       "What are the subfields?",
       "List all subfields",
-        "Subfields"
+      "Subfields"
     ],
     "oql": "get works; summarize by subfields;",
     "query": {
@@ -3833,7 +3833,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by domains where display_name is Social Sciences",
+    "oql": "get works; summarize by domains where display_name.search contains Social Sciences",
     "query": {
       "filters": [
         {
@@ -3849,8 +3849,8 @@
           "id": "leaf_nM4vws",
           "subjectEntity": "domains",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "Social Sciences"
         }
       ],
@@ -3935,7 +3935,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by institution-types where display_name is education",
+    "oql": "get works; summarize by institution-types where display_name.search contains education",
     "query": {
       "filters": [
         {
@@ -3951,8 +3951,8 @@
           "id": "leaf_nM4vws",
           "subjectEntity": "institution-types",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "education"
         }
       ],
@@ -4072,7 +4072,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by licenses where display_name is CC BY",
+    "oql": "get works; summarize by licenses where display_name.search contains CC BY",
     "query": {
       "filters": [
         {
@@ -4088,8 +4088,8 @@
           "id": "leaf_nM4vws",
           "subjectEntity": "licenses",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "CC BY"
         }
       ],
@@ -4174,7 +4174,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by source-types where display_name is journal",
+    "oql": "get works; summarize by source-types where display_name.search contains journal",
     "query": {
       "filters": [
         {
@@ -4190,8 +4190,8 @@
           "id": "leaf_nM4vws",
           "subjectEntity": "source-types",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "journal"
         }
       ],
@@ -4311,7 +4311,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by types where display_name is article",
+    "oql": "get works; summarize by types where display_name.search contains article",
     "query": {
       "filters": [
         {
@@ -4327,8 +4327,8 @@
           "id": "leaf_nM4vws",
           "subjectEntity": "types",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "article"
         }
       ],
@@ -4466,7 +4466,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by continents where id is continents/Q46 and display_name is Europe",
+    "oql": "get works; summarize by continents where id is continents/Q46 and display_name.search contains Europe",
     "query": {
       "filters": [
         {
@@ -4491,8 +4491,8 @@
           "id": "leaf_2VT3MS",
           "subjectEntity": "continents",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "Europe"
         }
       ],
@@ -4509,7 +4509,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by countries where id is countries/US and display_name is United States",
+    "oql": "get works; summarize by countries where id is countries/US and display_name.search contains United States",
     "query": {
       "filters": [
         {
@@ -4534,8 +4534,8 @@
           "id": "leaf_2VT3MS",
           "subjectEntity": "countries",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "United States"
         }
       ],
@@ -4552,7 +4552,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by domains where display_name is Social Sciences and description.search is society",
+    "oql": "get works; summarize by domains where display_name.search contains Social Sciences and description.search is society",
     "query": {
       "filters": [
         {
@@ -4569,8 +4569,8 @@
           "id": "leaf_nM4vws",
           "subjectEntity": "domains",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "Social Sciences"
         },
         {
@@ -4663,8 +4663,8 @@
           "id": "leaf_2VT3MS",
           "subjectEntity": "funders",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "research"
         }
       ],
@@ -4749,8 +4749,8 @@
           "id": "leaf_2VT3MS",
           "subjectEntity": "keywords",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "climate"
         }
       ],
@@ -4768,7 +4768,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by languages where id is languages/en and display_name is English",
+    "oql": "get works; summarize by languages where id is languages/en and display_name.search contains English",
     "query": {
       "filters": [
         {
@@ -4793,8 +4793,8 @@
           "id": "leaf_2VT3MS",
           "subjectEntity": "languages",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "English"
         }
       ],
@@ -4811,7 +4811,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by licenses where display_name is CC BY and description.search is attribution",
+    "oql": "get works; summarize by licenses where display_name.search contains CC BY and description.search is attribution",
     "query": {
       "filters": [
         {
@@ -4828,8 +4828,8 @@
           "id": "leaf_nM4vws",
           "subjectEntity": "licenses",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "CC-BY"
         },
         {
@@ -4854,7 +4854,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by publishers where country_code is US and display_name is University Press",
+    "oql": "get works; summarize by publishers where country_code is US and display_name.search contains University Press",
     "query": {
       "filters": [
         {
@@ -4879,8 +4879,8 @@
           "id": "leaf_2VT3MS",
           "subjectEntity": "publishers",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "University Press"
         }
       ],
@@ -4897,7 +4897,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by sdgs where id is sdgs/3 and display_name is Good Health and Well-being",
+    "oql": "get works; summarize by sdgs where id is sdgs/3 and display_name.search contains Good Health and Well-being",
     "query": {
       "filters": [
         {
@@ -4922,8 +4922,8 @@
           "id": "leaf_2VT3MS",
           "subjectEntity": "sdgs",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "Good Health and Well-being"
         }
       ],
@@ -4940,7 +4940,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by source-types where display_name is journal and id is source-types/journal",
+    "oql": "get works; summarize by source-types where display_name.search contains journal and id is source-types/journal",
     "query": {
       "filters": [
         {
@@ -4957,8 +4957,8 @@
           "id": "leaf_nM4vws",
           "subjectEntity": "source-types",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "journal"
         },
         {
@@ -5026,7 +5026,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by subfields where field is fields/33 and display_name is Cognitive Psychology",
+    "oql": "get works; summarize by subfields where field is fields/33 and display_name.search contains Cognitive Psychology",
     "query": {
       "filters": [
         {
@@ -5051,8 +5051,8 @@
           "id": "leaf_2VT3MS",
           "subjectEntity": "subfields",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "Cognitive Psychology"
         }
       ],
@@ -5113,7 +5113,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works; summarize by types where display_name is article and id is types/article",
+    "oql": "get works; summarize by types where display_name.search contains article and id is types/article",
     "query": {
       "filters": [
         {
@@ -5130,8 +5130,8 @@
           "id": "leaf_nM4vws",
           "subjectEntity": "types",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "article"
         },
         {
@@ -5653,7 +5653,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works where publication_year is greater than 2020; summarize by domains where display_name is Social Sciences",
+    "oql": "get works where publication_year is greater than 2020; summarize by domains where display_name.search contains Social Sciences",
     "query": {
       "filters": [
         {
@@ -5686,8 +5686,8 @@
           "id": "leaf_domainName",
           "subjectEntity": "domains",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "Social Sciences"
         }
       ],
@@ -5806,7 +5806,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works where publication_year is greater than 2020; summarize by institution-types where display_name is education",
+    "oql": "get works where publication_year is greater than 2020; summarize by institution-types where display_name.search contains education",
     "query": {
       "filters": [
         {
@@ -5839,8 +5839,8 @@
           "id": "leaf_instTypeName",
           "subjectEntity": "institution-types",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "education"
         }
       ],
@@ -6010,7 +6010,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works where publication_year is greater than 2020; summarize by licenses where display_name is CC BY",
+    "oql": "get works where publication_year is greater than 2020; summarize by licenses where display_name.search contains CC BY",
     "query": {
       "filters": [
         {
@@ -6043,8 +6043,8 @@
           "id": "leaf_licenseName",
           "subjectEntity": "licenses",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "CC-BY"
         }
       ],
@@ -6163,7 +6163,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works where publication_year is greater than 2020; summarize by source-types where display_name is journal",
+    "oql": "get works where publication_year is greater than 2020; summarize by source-types where display_name.search contains journal",
     "query": {
       "filters": [
         {
@@ -6196,8 +6196,8 @@
           "id": "leaf_sourceTypeName",
           "subjectEntity": "source-types",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "journal"
         }
       ],
@@ -6367,7 +6367,7 @@
   },
   {
     "natLang": [],
-    "oql": "get works where publication_year is greater than 2020; summarize by types where display_name is article",
+    "oql": "get works where publication_year is greater than 2020; summarize by types where display_name.search contains article",
     "query": {
       "filters": [
         {
@@ -6400,8 +6400,8 @@
           "id": "leaf_typeName",
           "subjectEntity": "types",
           "type": "leaf",
-          "column_id": "display_name",
-          "operator": "is",
+          "column_id": "display_name.search",
+          "operator": "contains",
           "value": "article"
         }
       ],
