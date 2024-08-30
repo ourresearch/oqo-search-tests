@@ -3581,7 +3581,7 @@
     "natLang": [
         "Get languages",
         "Languages",
-        "List languages",
+        "List languages"
     ],
     "oql": "get works; summarize by languages;",
     "query": {
@@ -3601,7 +3601,7 @@
     "natLang": [
         "What licenses do you have?",
         "List licenses",
-        "Licenses",
+        "Licenses"
     ],
     "oql": "get works; summarize by licenses;",
     "query": {
@@ -3621,7 +3621,7 @@
     "natLang": [
         "Get all the publishers",
         "List all publishers",
-        "Publishers",
+        "Publishers"
     ],
     "oql": "get works; summarize by publishers;",
     "query": {
@@ -3681,7 +3681,7 @@
     "natLang": [
       "What are your sources?",
       "List all the sources",
-      "Sources",
+      "Sources"
     ],
     "oql": "get works; summarize by sources;",
     "query": {
@@ -3763,7 +3763,7 @@
     "natLang": [
       "show me all authors with an ORCID",
       "Get authors with ORCID",
-      "Authors with ORCID",
+      "Authors with ORCID"
     ],
     "oql": "get works; summarize by authors where has_orcid is true",
     "query": {
