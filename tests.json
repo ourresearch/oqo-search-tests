@@ -3057,8 +3057,8 @@
   },
   {
     "natLang": [
-      "for every work, get me these columns: display name, year, type, citations, field ID, DOI, topic ID, keyword ID, domain ID, OA status, open access color, continent, source ID, DOAJ status, language, countries, global south status, source type, subfield ID, and author ID"
-      "these columns for every work: display name, year, type, citations, field ID, DOI, topic ID, keyword ID, domain ID, OA status, open access color, continent, source ID, DOAJ status, language, countries, global south status, source type, subfield ID, and author ID"
+      "for every work, get me these columns: display name, year, type, citations, field ID, DOI, topic ID, keyword ID, domain ID, OA status, open access color, continent, source ID, DOAJ status, language, countries, global south status, source type, subfield ID, and author ID",
+      "these columns for every work: display name, year, type, citations, field ID, DOI, topic ID, keyword ID, domain ID, OA status, open access color, continent, source ID, DOAJ status, language, countries, global south status, source type, subfield ID, and author ID",
       "Columns: display name, year, type, citations, field ID, DOI, topic ID, keyword ID, domain ID, OA status, open access color, continent, source ID, DOAJ status, language, countries, global south status, source type, subfield ID, and author ID"
     ],
     "oql": "get works return display_name, publication_year, type, cited_by_count, primary_topic.field.id, doi, primary_topic.id, keywords.id, primary_topic.domain.id, open_access.is_oa, open_access.oa_status, authorships.institutions.continent, primary_location.source.id, primary_location.source.is_in_doaj, language, authorships.countries, institutions.is_global_south, primary_location.source.type, primary_topic.subfield.id, authorships.author.id",
@@ -3281,7 +3281,7 @@
       "Get all works with more than 100 citations and summarize",
       "Summarize works with more than 100 citations",
       "Summarize works with over 100 citations",
-      "Summarize works with >100 citations",
+      "Summarize works with >100 citations"
     ],
     "oql": "get works where cited_by_count is greater than 100; summarize;",
     "query": {
@@ -3359,7 +3359,7 @@
     "natLang": [
       "Summarize all works that are gold open access",
       "Summarize Gold OA works",
-      "Summarize works published in Gold OA journals",
+      "Summarize works published in Gold OA journals"
     ],
     "oql": "get works where open_access.oa_status is gold; summarize;",
     "query": {
@@ -3419,7 +3419,7 @@
     "natLang": [
         "Summarize  by continent",
         "Get continents",
-        "Continents",
+        "Continents"
     ],
     "oql": "get works; summarize by continents;",
     "query": {
@@ -3460,7 +3460,7 @@
     "natLang": [
         "Summarize by domain",
         "Get domains",
-        "Domains",
+        "Domains"
     ],
     "oql": "get works; summarize by domains;",
     "query": {
@@ -3480,7 +3480,7 @@
     "natLang": [
         "Summarize works by field",
         "Get fields",
-        "Fields",
+        "Fields"
     ],
     "oql": "get works; summarize by fields;",
     "query": {
@@ -3500,7 +3500,7 @@
     "natLang": [
         "Summarize works by funder",
         "Get funders",
-        "Funders",
+        "Funders"
     ],
     "oql": "get works; summarize by funders;",
     "query": {
@@ -3541,7 +3541,7 @@
         "What institutions are there?",
         "Get institutions",
         "List institutions",
-        "Institutions",
+        "Institutions"
     ],
     "oql": "get works; summarize by institutions;",
     "query": {
