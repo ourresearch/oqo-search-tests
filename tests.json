@@ -2032,7 +2032,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Give me all non-dataset works or works where the primary source is Pubmed",
+      "Please show all Pubmed works or works that are not datasets",
+      "All works that are not datasets or are from Pubmed"
+    ],
     "oql": "get works where type is not dataset or primary_location.source.id is sources/S4306525036",
     "query": {
       "filters": [
@@ -2119,7 +2123,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Get Japanese works or works with an APC less than 3000",
+      "Show me all works from Japan or works with an APC sum less than 3000",
+      "All works from Japan or works with an APC total less than 3000"
+    ],
     "oql": "get works where authorships.countries is countries/JP or apc_sum is less than 3000",
     "query": {
       "filters": [
@@ -2163,7 +2171,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me works by Charles Thomas Parker that are either non-articles or published in 2020",
+      "Works by Charles Thomas Parker that are not articles or are from 2020"
+    ],
     "oql": "get works where ((publication_year is 2020 or type is not article) and authorships.author.id is authors/A5053617215)",
     "query": {
       "filters": [
@@ -2224,7 +2235,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Get me either works that are gold open access or are in English and have more than 100 citations",
+      "Show me works that are either 1. gold open access or 2. works in English that have been cited at least 100 times",
+      "All works that are in English and have at least 100 citations OR works that are designated as gold open access"
+    ],
     "oql": "get works where ((cited_by_count is greater than 100 and language is English) or open_access.oa_status is gold)",
     "query": {
       "filters": [
@@ -2286,7 +2301,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Get works from educational institutions that are either from a journal or have an APC less than 2000",
+      "Show me works that are either from a journal or have an APC total less than 2000. Also show educational institutions only",
+      "All works from educational institutions that are either from a journal or have an APC total less than 2000"
+    ],
     "oql": "get works where (authorships.institutions.type is education and (primary_location.source.type is journal or apc_sum is less than 2000))",
     "query": {
       "filters": [
@@ -2348,7 +2367,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show all works that are either Good health and well-being or are both funded by the National Science Foundation and were published after 2018",
+      "Works that are either related to the SDG for Good health and well-being or are funded by the National Science Foundation and were published after 2018"
+    ],
     "oql": "get works where (sustainable_development_goals.id is sdgs/3 or (grants.funder is funders/F4320306076 and publication_year is greater than 2018))",
     "query": {
       "filters": [
@@ -2410,7 +2432,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "I want to see either 1. works that reference W1775749144 and are from Europe or 2. works that are from journal ISSN 0140-6736 with more than 50 citations",
+      "Works that reference W1775749144 and are from Europe or works from the Lancet journal with more than 50 citations"
+    ],
     "oql": "get works where ((referenced_works is works/W1775749144 and authorships.institutions.continent is continents/Q46) or (primary_location.source.issn is 0140-6736 and cited_by_count is greater than 50))",
     "query": {
       "filters": [
@@ -2490,7 +2515,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "List all works sorted by title in ascending order"
+    ],
     "oql": "get works; sort by display_name asc",
     "query": {
       "sort_by": {
@@ -2509,7 +2536,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "List all works sorted by title in descending order"
+    ],
     "oql": "get works; sort by display_name desc",
     "query": {
       "sort_by": {
@@ -2528,7 +2557,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me all works sorted by the number of citations in ascending order",
+      "List all works sorted by the citations with the least cited works first"
+    ],
     "oql": "get works; sort by cited_by_count asc",
     "query": {
       "sort_by": {
@@ -2547,7 +2579,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me all works sorted by the number of citations in descending order",
+      "List all works sorted by the citations with the most cited works first"
+    ],
     "oql": "get works; sort by cited_by_count desc",
     "query": {
       "sort_by": {
@@ -2566,7 +2601,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me all works sorted by the publication year in ascending order",
+      "List all works sorted by the publication year with the oldest works first"
+    ],
     "oql": "get works; sort by publication_year asc",
     "query": {
       "sort_by": {
@@ -2585,7 +2623,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me all works sorted by the publication year in descending order",
+      "List all works sorted by the publication year with the newest works first"
+    ],
     "oql": "get works; sort by publication_year desc",
     "query": {
       "sort_by": {
@@ -2604,7 +2645,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me only the titles of all works",
+      "List all works with only the title displayed"
+    ],
     "oql": "get works return display_name",
     "query": {
       "return_columns": [
@@ -2622,7 +2666,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me a list of only the publication year of all works",
+      "List all works with only the publication year displayed"
+    ],
     "oql": "get works return publication_year",
     "query": {
       "return_columns": [
@@ -2640,7 +2687,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me a list of only the type of all works",
+      "List all works with only the work type displayed"
+    ],
     "oql": "get works return type",
     "query": {
       "return_columns": [
@@ -2658,7 +2708,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me a list of only the number of citations for all works",
+      "List all works with only the number of citations displayed"
+    ],
     "oql": "get works return cited_by_count",
     "query": {
       "return_columns": [
@@ -2676,7 +2729,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me a list of only the topic of all works",
+      "List all works with only the topic displayed"
+    ],
     "oql": "get works return primary_topic.field.id",
     "query": {
       "return_columns": [
@@ -2694,7 +2750,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me a list of only the DOI of all works",
+      "List all works with only the doi displayed"
+    ],
     "oql": "get works return doi",
     "query": {
       "return_columns": [
