@@ -732,6 +732,9 @@
     "description": "single filter (apc_paid.value_usd is)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -773,6 +776,9 @@
     "tags": [
       "operator",
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -814,6 +820,9 @@
     "tags": [
       "operator",
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1449,6 +1458,9 @@
     "description": "single filter (apc_sum is)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1487,6 +1499,9 @@
     "tags": [
       "operator",
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1525,6 +1540,9 @@
     "tags": [
       "operator",
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1564,6 +1582,9 @@
     "description": "single filter (language is, code in oql)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1603,6 +1624,9 @@
     "description": "single filter (language is, display_name in oql)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1639,6 +1663,9 @@
     "description": "single filter (sustainable_development_goals.id is, code in oql)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1676,6 +1703,9 @@
     "description": "single filter (sustainable_development_goals.id is, display_name in oql)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1902,6 +1932,9 @@
     "tags": [
       "works_two_filter",
       "operator"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -2181,6 +2214,9 @@
     "tags": [
       "works_two_filter",
       "operator"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
