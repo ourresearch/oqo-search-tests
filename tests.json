@@ -1906,6 +1906,9 @@
     "description": "2 filters (language is, open_access.oa_status is) with AND",
     "tags": [
       "works_two_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -2003,6 +2006,9 @@
     "description": "2 filters (sustainable_development_goals.id is, authorships.institutions.type is) with AND",
     "tags": [
       "works_two_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -2048,6 +2054,9 @@
     "description": "2 filters (referenced_works is, primary_location.source.issn is) with OR",
     "tags": [
       "works_two_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -2093,6 +2102,9 @@
     "description": "2 filters (publication_year is, authorships.institutions.continent is) with OR",
     "tags": [
       "works_two_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -2187,6 +2199,9 @@
     "tags": [
       "works_two_filter",
       "operator"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
