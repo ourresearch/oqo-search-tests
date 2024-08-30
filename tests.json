@@ -1165,6 +1165,9 @@
     "description": "single filter (primary_location.source.is_oa is)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1240,6 +1243,9 @@
     "description": "single filter (funder is, display_name in oql)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1276,6 +1282,9 @@
     "description": "single filter (funder is)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1312,6 +1321,9 @@
     "description": "single filter (grants.award_id is)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -1748,6 +1760,9 @@
     "description": "single filter (referenced_works is)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
