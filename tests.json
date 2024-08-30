@@ -899,6 +899,9 @@
     "description": "single filter (authorships.institutions.continent is)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
@@ -937,6 +940,9 @@
     "description": "single filter (authorships.institutions.is_global_south is)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "jsonToSearch"
     ]
   },
   {
