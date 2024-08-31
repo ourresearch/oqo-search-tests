@@ -910,7 +910,7 @@
       "show me works from the Global South",
       "Global South works"
     ],
-    "oql": "get works where authorships.institutions.is_global_south is true",
+    "oql": "get works where institutions.is_global_south is true",
     "query": {
       "filters": [
         {
@@ -926,7 +926,7 @@
           "id": "leaf_kTNM3L",
           "subjectEntity": "works",
           "type": "leaf",
-          "column_id": "authorships.institutions.continent",
+          "column_id": "institutions.is_global_south",
           "operator": "is",
           "value": true
         }
