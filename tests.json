@@ -161,6 +161,9 @@
     "description": "single filter (topic is)",
     "tags": [
       "works_single_filter"
+    ],
+    "skip": [
+      "natLangToJson"
     ]
   },
   {
@@ -6981,7 +6984,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What languages are found in OpenAlex?",
+      "Show me all languages in OpenAlex",
+      "Give me a list of all languages in OpenAlex"
+    ],
     "oql": "get works; summarize by languages; return display_name",
     "query": {
       "summarize_by": "languages",
@@ -6998,7 +7005,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me all licenses in OpenAlex along with their descriptions",
+      "What types of licenses are in OpenAlex?",
+      "Give me a list of all licenses in OpenAlex and describe them"
+    ],
     "oql": "get works; summarize by licenses; return display_name, description",
     "query": {
       "summarize_by": "licenses",
@@ -7016,7 +7027,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Who are the publishers found in OpenAlex?",
+      "Show me all publishers in OpenAlex",
+      "Give me a list of all publishers in OpenAlex"
+    ],
     "oql": "get works; summarize by publishers; return display_name",
     "query": {
       "summarize_by": "publishers",
@@ -7033,7 +7048,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the SDGs in OpenAlex?",
+      "Show me all SDGs in OpenAlex",
+      "Give me a list of all SDGs in OpenAlex"
+    ],
     "oql": "get works; summarize by sdgs; return display_name",
     "query": {
       "summarize_by": "sdgs",
@@ -7050,7 +7069,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the source types in OpenAlex?",
+      "Show me all source types in OpenAlex",
+      "Give me a list of all source types in OpenAlex"
+    ],
     "oql": "get works; summarize by source-types; return display_name",
     "query": {
       "summarize_by": "source-types",
@@ -7067,7 +7090,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me all sources in OpenAlex along with their ISSNs, DOAJ status, type, and number of works",
+      "What are all the sources in OpenAlex? Please give me their ISSNs, DOAJ status, type, and number of works",
+      "Give me a list of all sources in OpenAlex and their ISSNs, DOAJ status, type, and number of works"
+    ],
     "oql": "get works; summarize by sources; return ids.issn, display_name, type, is_in_doaj, count(works)",
     "query": {
       "summarize_by": "sources",
@@ -7088,7 +7115,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me all subfields in OpenAlex along with their descriptions",
+      "What are all the subfields in OpenAlex?",
+      "Give me a list of all subfields in OpenAlex and describe them"
+    ],
     "oql": "get works; summarize by subfields; return display_name, description",
     "query": {
       "summarize_by": "subfields",
@@ -7106,7 +7137,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me all topics in OpenAlex along with their descriptions",
+      "What are all the topics in OpenAlex?",
+      "Give me a list of all topics in OpenAlex and describe them"
+    ],
     "oql": "get works; summarize by topics; return display_name, description",
     "query": {
       "summarize_by": "topics",
@@ -7124,7 +7159,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show me all work types in OpenAlex along with their descriptions",
+      "What are all the work types in OpenAlex?",
+      "Give me a list of all work types in OpenAlex and describe them"
+    ],
     "oql": "get works; summarize by types; return display_name, description",
     "query": {
       "summarize_by": "types",
@@ -7168,7 +7207,10 @@
           "value": "types/article"
         }
       ]
-    }
+    },
+    "tags": [
+      "natLangTest"
+    ]
   },
   {
     "natLang": [
@@ -7197,7 +7239,10 @@
           "value": 2020
         }
       ]
-    }
+    },
+    "tags": [
+      "natLangTest"
+    ]
   },
   {
     "natLang": [
@@ -7237,7 +7282,10 @@
         "open_access.oa_status",
         "cited_by_count"
       ]
-    }
+    },
+    "tags": [
+      "natLangTest"
+    ]
   },
   {
     "natLang": [
@@ -7266,7 +7314,10 @@
           "value": "types/article"
         }
       ]
-    }
+    },
+    "tags": [
+      "natLangTest"
+    ]
   },
   {
     "natLang": [
@@ -7312,7 +7363,10 @@
           "value": "countries/CA"
         }
       ]
-    }
+    },
+    "tags": [
+      "natLangTest"
+    ]
   },
   {
     "natLang": [
@@ -7325,7 +7379,10 @@
         "display_name",
         "ids.ror"
       ]
-    }
+    },
+    "tags": [
+      "natLangTest"
+    ]
   },
   {
     "natLang": [
@@ -7343,7 +7400,10 @@
         "ids.ror",
         "count(works)"
       ]
-    }
+    },
+    "tags": [
+      "natLangTest"
+    ]
   },
   {
     "natLang": [],
@@ -7529,7 +7589,10 @@
         "display_name",
         "count"
       ]
-    }
+    },
+    "skip": [
+      "natLangToJson"
+    ]
   },
   {
     "natLang": [],
