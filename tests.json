@@ -2776,7 +2776,6 @@
   },
   {
     "natLang": [
-      "Show me a list of only the type of all works",
       "List all works with only the work type displayed"
     ],
     "oql": "get works return type",
@@ -2818,8 +2817,7 @@
   },
   {
     "natLang": [
-      "Show me a list of only the topic of all works",
-      "List all works with only the topic displayed"
+      "List all works with only the field id displayed"
     ],
     "oql": "get works return primary_topic.field.id",
     "query": {
@@ -2839,7 +2837,6 @@
   },
   {
     "natLang": [
-      "Show me a list of only the DOI of all works",
       "List all works with only the doi displayed"
     ],
     "oql": "get works return doi",
@@ -2943,7 +2940,7 @@
   },
   {
     "natLang": [
-      "Show me the contentent of every work",
+      "Show me the continent of every work",
       "get all works, just show the continent"
     ],
     "oql": "get works return authorships.institutions.continent",
@@ -3006,8 +3003,7 @@
   },
   {
     "natLang": [
-      "Show me the language of every work",
-      "I want to see the language of every work"
+      "Show me all works and return only the language"
     ],
     "oql": "get works return language",
     "query": {
@@ -3027,8 +3023,7 @@
   },
   {
     "natLang": [
-      "Show me the countries where every work comes from",
-      "All works, show only countries"
+      "Show me every work and return only the country where every work comes from"
     ],
     "oql": "get works return authorships.countries",
     "query": {
@@ -3173,16 +3168,17 @@
   },
   {
     "natLang": [
-      "Get title and year for every work",
-      "All works, show title and year",
-      "Works with columns for title and year",
-      "For all works, display title and year"
+      "Get title and year for every work while sorting by the number of citations in descending order",
+      "All works sorted by citation count, showing title and year",
+      "Works with columns for title and year and sorted by citation count with the highest cited works first",
+      "For all works, display title and year in order of works with the highest citations first"
     ],
     "oql": "get works; return display_name, publication_year",
     "query": {
       "return_columns": [
         "display_name",
-        "publication_year"
+        "publication_year",
+        "cited_by_count"
       ],
       "sort_by": {
         "column_id": "cited_by_count",
@@ -3200,17 +3196,18 @@
   },
   {
     "natLang": [
-      "Get type, DOI, and language for every work",
-      "All works; show type, DOI, and language",
-      "Works with columns for type, DOI, and language",
-      "Columns: type, DOI, language"
+      "Get type, DOI, and language for every work while sorting by the publication year in ascending order",
+      "All works; show type, DOI, and language while showing the earliest works first",
+      "Works with columns for type, DOI, and language and sorted by the oldest works first",
+      "Columns: type, DOI, language sorted by oldest works first"
     ],
     "oql": "get works; return type, doi, language",
     "query": {
       "return_columns": [
         "type",
         "doi",
-        "language"
+        "language",
+        "publication_year"
       ],
       "sort_by": {
         "column_id": "publication_year",
@@ -3228,14 +3225,15 @@
   },
   {
     "natLang": [
-      "Get the topic ID, whether the work is OA or not, and countries for every work",
-      "All works; show topic ID, OA status, and country",
-      "Works with columns for topic ID, open access, and countries",
-      "Columns: topic ID, OA, country"
+      "Get the topic ID, whether the work is OA or not, and countries for every work while sorting by title in alphabetical order",
+      "All works; show topic ID, OA status, and country and sort by title in alphabetical order",
+      "Works with columns for topic ID, open access, and countries. Sort by title in alphabetical order",
+      "Columns: topic ID, OA, country. Sort: title in ascending order"
     ],
     "oql": "get works; return primary_topic.field.id, open_access.oa_status, authorships.countries",
     "query": {
       "return_columns": [
+        "display_name",
         "primary_topic.field.id",
         "open_access.oa_status",
         "authorships.countries"
