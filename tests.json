@@ -6458,7 +6458,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Who are the authors in OpenAlex? Show the authors with the highest work counts first",
+      "Show me all authors in OpenAlex sorted by works count in descending order"
+    ],
     "oql": "get works; summarize by authors; sort by count(works) desc;",
     "query": {
       "summarize_by": "authors",
@@ -6477,26 +6480,10 @@
     ]
   },
   {
-    "natLang": [],
-    "oql": "get works; summarize by concepts; sort by display_name asc;",
-    "query": {
-      "summarize_by": "concepts",
-      "sort_by": {
-        "column_id": "display_name",
-        "direction": "asc"
-      }
-    },
-    "ignore": [
-      "return_columns",
-      "filters"
+    "natLang": [
+      "What are the countries in OpenAlex? Sort them in reverse alphabetical order",
+      "Show me the countries in OpenAlex. Sort them in reverse alphabetical order"
     ],
-    "description": "Summarize by entity sort",
-    "tags": [
-      "summarize_by_entity_sort"
-    ]
-  },
-  {
-    "natLang": [],
     "oql": "get works; summarize by countries; sort by display_name desc;",
     "query": {
       "summarize_by": "countries",
@@ -6515,7 +6502,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the domains in OpenAlex? Sort them in alphabetical order",
+      "Show me the domains in OpenAlex. Sort them in alphabetical order"
+    ],
     "oql": "get works; summarize by domains; sort by display_name asc;",
     "query": {
       "summarize_by": "domains",
@@ -6534,7 +6524,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the fields in OpenAlex? Sort them in reverse alphabetical order",
+      "Show me the fields in OpenAlex. Sort them in reverse alphabetical order"
+    ],
     "oql": "get works; summarize by fields; sort by display_name desc;",
     "query": {
       "summarize_by": "fields",
@@ -6553,7 +6546,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the funders in OpenAlex? Sort them in alphabetical order",
+      "Show me the funders in OpenAlex. Sort them in ascending order"
+    ],
     "oql": "get works; summarize by funders; sort by display_name asc;",
     "query": {
       "summarize_by": "funders",
@@ -6572,7 +6568,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the institution types in OpenAlex? Sort them in reverse alphabetical order",
+      "Show me the institution types in OpenAlex. Sort them in reverse alphabetical order"
+    ],
     "oql": "get works; summarize by institution-types; sort by display_name desc;",
     "query": {
       "summarize_by": "institution-types",
@@ -6591,7 +6590,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the institutions in OpenAlex? Sort by descending FWCI",
+      "Show me the institutions in OpenAlex. Sort them by FWCI in descending order"
+    ],
     "oql": "get works; summarize by institutions; sort by mean(fwci) desc;",
     "query": {
       "summarize_by": "institutions",
@@ -6610,7 +6612,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the keywords and their counts in OpenAlex? Show the most popular keywords first",
+      "Show me the keywords and their counts in OpenAlex. Give the highest count first"
+    ],
     "oql": "get works; summarize by keywords; sort by count(works) desc;",
     "query": {
       "summarize_by": "keywords",
@@ -6629,7 +6634,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the languages in OpenAlex? Sort by in ascending order",
+      "Show me the languages in OpenAlex. Sort them in ascending order"
+    ],
     "oql": "get works; summarize by languages; sort by display_name asc;",
     "query": {
       "summarize_by": "languages",
@@ -6648,7 +6656,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the licenses in OpenAlex? Sort by in descending order",
+      "Show me the licenses in OpenAlex. Sort them in descending order"
+    ],
     "oql": "get works; summarize by licenses; sort by display_name desc;",
     "query": {
       "summarize_by": "licenses",
@@ -6667,7 +6678,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the publishers in OpenAlex? Sort by in ascending order",
+      "Show me the publishers in OpenAlex. Sort them in ascending order"
+    ],
     "oql": "get works; summarize by publishers; sort by display_name asc;",
     "query": {
       "summarize_by": "publishers",
@@ -6686,7 +6700,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the SDGs in OpenAlex? Sort in descending order",
+      "Show me the SDGs in OpenAlex. Sort them in descending order"
+    ],
     "oql": "get works; summarize by sdgs; sort by display_name desc;",
     "query": {
       "summarize_by": "sdgs",
@@ -6705,7 +6722,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the source types in OpenAlex? Sort by in ascending order",
+      "Show me the source types in OpenAlex. Sort them in ascending order"
+    ],
     "oql": "get works; summarize by source-types; sort by display_name asc;",
     "query": {
       "summarize_by": "source-types",
@@ -6724,7 +6744,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show sources in OpenAlex along with their description and sort by the number of works in descending order",
+      "What are the sources in OpenAlex? Show me their description and sort them by the number of works in descending order"
+    ],
     "oql": "get works; summarize by sources; sort by count(works) desc;",
     "query": {
       "summarize_by": "sources",
@@ -6743,7 +6766,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show all subfields in OpenAlex in alphabetical order",
+      "What are the subfields in OpenAlex? In alphabetical order",
+      "Give me a list of all subfields in OpenAlex in alphabetical order"
+    ],
     "oql": "get works; summarize by subfields; sort by display_name asc;",
     "query": {
       "summarize_by": "subfields",
@@ -6762,7 +6789,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show topics in OpenAlex along with their description. Sort them in reverse alphabetical order",
+      "What are the topics in OpenAlex? Show me their description and sort them in reverse alphabetical order"
+    ],
     "oql": "get works; summarize by topics; sort by display_name desc;",
     "query": {
       "summarize_by": "topics",
@@ -6781,7 +6811,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show all work types in OpenAlex in alphabetical order",
+      "What are the work types in OpenAlex? In alphabetical order",
+      "Give me a list of all work types in OpenAlex in alphabetical order"
+    ],
     "oql": "get works; summarize by types; sort by display_name asc;",
     "query": {
       "summarize_by": "types",
@@ -6800,14 +6834,16 @@
     ]
   },
   {
-    "natLang": [],
-    "oql": "get works; summarize by authors; return ids.orcid, display_name, affiliations.institution.id, last_known_institutions.id, count(works)",
+    "natLang": [
+      "Show authors in OpenAlex along with their ORCID, last known institution, and works count",
+      "What are the authors in OpenAlex? Show me their ORCID, last known institution, and works count"
+    ],
+    "oql": "get works; summarize by authors; return ids.orcid, display_name, last_known_institutions.id, count(works)",
     "query": {
       "summarize_by": "authors",
       "return_columns": [
         "ids.orcid",
         "display_name",
-        "affiliations.institution.id",
         "last_known_institutions.id",
         "count(works)"
       ]
@@ -6821,24 +6857,11 @@
     ]
   },
   {
-    "natLang": [],
-    "oql": "get works; summarize by concepts; return display_name",
-    "query": {
-      "summarize_by": "concepts",
-      "return_columns": [
-        "display_name"
-      ]
-    },
-    "ignore": [
-      "filters",
-      "sort_by"
+    "natLang": [
+      "What are the continents in OpenAlex?",
+      "Show me all continents in OpenAlex",
+      "Give me a list of all continents in OpenAlex"
     ],
-    "tags": [
-      "summarize_by_entity_return_columns"
-    ]
-  },
-  {
-    "natLang": [],
     "oql": "get works; summarize by continents; return display_name",
     "query": {
       "summarize_by": "continents",
@@ -6855,7 +6878,9 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Give me a list of all countries in OpenAlex"
+    ],
     "oql": "get works; summarize by countries; return display_name",
     "query": {
       "summarize_by": "countries",
@@ -6872,7 +6897,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the domains in OpenAlex?",
+      "Show me all domains in OpenAlex",
+      "Give me a list of all domains in OpenAlex"
+    ],
     "oql": "get works; summarize by domains; return display_name, description",
     "query": {
       "summarize_by": "domains",
@@ -6890,7 +6919,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the fields in OpenAlex?",
+      "Show me all fields in OpenAlex",
+      "Give me a list of all fields in OpenAlex"
+    ],
     "oql": "get works; summarize by fields; return display_name, description",
     "query": {
       "summarize_by": "fields",
@@ -6908,7 +6941,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the funders in OpenAlex? Show me the country, doi, crossref_id, and description of each funder",
+      "Show me all funders in OpenAlex and give the country, doi, crossref_id, and description of each funder"
+    ],
     "oql": "get works; summarize by funders; return display_name, country_code, doi, crossref_id, description",
     "query": {
       "summarize_by": "funders",
@@ -6929,7 +6965,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the institution types in OpenAlex?",
+      "Show me all institution types in OpenAlex",
+      "Give me a list of all institution types in OpenAlex"
+    ],
     "oql": "get works; summarize by institution-types; return display_name",
     "query": {
       "summarize_by": "institution-types",
@@ -6946,7 +6986,10 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "Show high level statistics about institutions in OpenAlex including their type, FWCI, and work counts",
+      "What are the high level statistics about institutions in OpenAlex?"
+    ],
     "oql": "get works; summarize by institutions; return display_name, type, mean(fwci), count",
     "query": {
       "summarize_by": "institutions",
@@ -6966,7 +7009,11 @@
     ]
   },
   {
-    "natLang": [],
+    "natLang": [
+      "What are the keywords in OpenAlex and how many works are they connected to?",
+      "What are counts of keywords in OpenAlex?",
+      "Show me all keywords in OpenAlex and the work counts associated with them"
+    ],
     "oql": "get works; summarize by keywords; return display_name, count(works)",
     "query": {
       "summarize_by": "keywords",
