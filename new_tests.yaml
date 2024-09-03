@@ -1,0 +1,60 @@
+---
+- oql: get works
+  created: 03-09-2024
+  notes: starting place
+  natLang:
+    - what works are there?
+  query:
+    get_rows: works
+
+
+
+# leave lots of spaces between stories to make them easier to find
+- oql: get works where type is article
+  created: 03-09-2024
+  notes: null
+  natLang:
+    - what articles are there?
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: type
+        # the default operator is 'is'
+        value: article
+
+
+
+
+
+- oql: get works where type is not article
+  created: 03-09-2024
+  notes: negate filter
+  natLang:
+    - what works aren't articles?
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: type
+        operator: is not  # not the default, so must be specified
+        value: article
+
+
+
+
+
+- oql: get works where type is article and publication_year > 2013
+  created: 03-09-2024
+  notes: two filters
+  natLang:
+    - what articles were published since 2014?
+    - what articles were published in the last ten years?
+  query:
+    get_rows: works
+    filter_works: # default join is 'and'
+      - column_id: type
+        value: article
+      - column_id: publication_year
+        operator: is greater than
+        value: 2013
+
+
