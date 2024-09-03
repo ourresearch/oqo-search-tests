@@ -7161,9 +7161,9 @@
   },
   {
     "natLang": [
-      "Show me all subfields in OpenAlex along with their descriptions",
-      "What are all the subfields in OpenAlex?",
-      "Give me a list of all subfields in OpenAlex and describe them"
+      "Show me all subfields in OpenAlex along with a description of the subfield",
+      "What are all the subfields in OpenAlex? Show the description column as well",
+      "Give me a list of all subfields in OpenAlex and their description."
     ],
     "oql": "get works; summarize by subfields; return display_name, description",
     "query": {
@@ -7183,9 +7183,9 @@
   },
   {
     "natLang": [
-      "Show me all topics in OpenAlex along with their descriptions",
-      "What are all the topics in OpenAlex?",
-      "Give me a list of all topics in OpenAlex and describe them"
+      "Show me all topics in OpenAlex along with a description of the topic",
+      "What are all the topics in OpenAlex? Show the description column as well",
+      "Give me a list of all topics in OpenAlex and their descriptions"
     ],
     "oql": "get works; summarize by topics; return display_name, description",
     "query": {
@@ -7205,9 +7205,9 @@
   },
   {
     "natLang": [
-      "Show me all work types in OpenAlex along with their descriptions",
-      "What are all the work types in OpenAlex?",
-      "Give me a list of all work types in OpenAlex and describe them"
+      "Show me all types of works in OpenAlex (name and description)",
+      "What are all names of the work types in OpenAlex? Show the description as well.",
+      "Give me a list of all types of works in OpenAlex while only showing the name and a description of each"
     ],
     "oql": "get works; summarize by types; return display_name, description",
     "query": {
