@@ -58,3 +58,76 @@
         value: 2013
 
 
+
+
+- oql: using works where authorships.author.id is A5023888391; get topics;
+  created: 04-09-2024
+  notes:
+    - demo_priority_1
+    - get non-work entity
+    - using works
+  natLang:
+    - what topics does Jason Priem work on?
+  query:
+    - get_rows: topics
+    - filter_works:
+        - column_id: authorships.author.id
+          operator: is
+          value: A5023888391
+
+
+
+
+- oql: get institutions where country is au; sort by percent(is_open_access) desc;
+  created: 04-09-2024
+  notes:
+    - demo_priority_1
+    - get non-work entity
+  natLang:
+    - which institutions in austria have the highest %OA?
+  query:
+    - get_rows: institutions
+    - filter_aggs:
+        - column_id: country
+          value: au
+    - sort_by_column: percent(is_open_access)
+    - sort_by_order: desc
+
+
+
+
+- oql: get authors where has_orcid is true and country is br; show count;
+  created: 04-09-2024
+  notes:
+    - demo_priority_1
+    - get non-work entity
+  natLang:
+    - how many authors in Brazil have an ORCID?
+  query:
+    - get_rows: authors
+    - filter_aggs:
+        - column_id: has_orcid
+          value: true
+        - column_id: country
+          value: br
+    - show_columns:
+        - count
+
+
+
+
+- oql: using works where country is ua; get authors where affiliations.institutions.id is I859038795;
+  created: 04-09-2024
+  notes:
+    - demo_priority_1
+    - get non-work entity
+  natLang:
+    - which researchers at virginia tech are collaborating with researchers in Ukraine?
+  query:
+    - get_rows: author
+    - filter_works:
+        - column_id: country
+          value: ua
+    - filter_aggs:
+        - column_id: affiliations.institutions.id
+          value: I859038795
