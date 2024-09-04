@@ -98,7 +98,7 @@
 
 
 
-- oql: get a summary of authors where has_orcid is true and country_code is br; show count;
+- oql: get authors where has_orcid is true and country_code is br; show count;
   created: 04-09-2024
   notes:
     - demo_priority_1
@@ -106,7 +106,7 @@
   natLang:
     - how many authors in Brazil have an ORCID?
   query:
-    get_rows: summary
+    get_rows: authors
     filter_aggs:
       - column_id: has_orcid
         value: true
