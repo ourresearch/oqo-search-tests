@@ -54,7 +54,7 @@
       - column_id: type
         value: types/article
       - column_id: publication_year
-        operator: >
+        operator: ">"
         value: 2013
 
 
