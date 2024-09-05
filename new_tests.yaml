@@ -98,7 +98,7 @@
 
 
 
-- oql: get authors where has_orcid is true and country_code is br; show count;
+- oql: get authors where has_orcid is true and affiliations.institution.country_code is br; show count;
   created: 04-09-2024
   notes:
     - demo_priority_1
@@ -110,7 +110,7 @@
     filter_aggs:
       - column_id: has_orcid
         value: true
-      - column_id: country_code
+      - column_id: affiliations.institution.country_code
         value: br
     show_columns:
       - count
