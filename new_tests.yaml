@@ -10,7 +10,7 @@
 
 
 # leave lots of spaces between stories to make them easier to find
-- oql: get works where type is article
+- oql: get works where type is types/article
   created: 03-09-2024
   notes: null
   natLang:
@@ -20,13 +20,13 @@
     filter_works:
       - column_id: type
         # the default operator is 'is'
-        value: article
+        value: types/article
 
 
 
 
 
-- oql: get works where type is not article
+- oql: get works where type is not types/article
   created: 03-09-2024
   notes: negate filter
   natLang:
@@ -36,13 +36,13 @@
     filter_works:
       - column_id: type
         operator: is not  # not the default, so must be specified
-        value: article
+        value: types/article
 
 
 
 
 
-- oql: get works where type is article and publication_year > 2013
+- oql: get works where type is types/article and publication_year > 2013
   created: 03-09-2024
   notes: two filters
   natLang:
@@ -52,15 +52,15 @@
     get_rows: works
     filter_works: # default join is 'and'
       - column_id: type
-        value: article
+        value: types/article
       - column_id: publication_year
-        operator: is greater than
+        operator: >
         value: 2013
 
 
 
 
-- oql: using works where authorships.author.id is A5023888391; get topics;
+- oql: using works where authorships.author.id is authors/A5023888391; get topics;
   created: 04-09-2024
   notes:
     - demo_priority_1
@@ -72,14 +72,13 @@
     get_rows: topics
     filter_works:
         - column_id: authorships.author.id
-          operator: is
-          value: A5023888391
+          value: authors/A5023888391
 
 
 
 
 
-- oql: get institutions where country_code is au; sort by percent(is_open_access) desc;
+- oql: get institutions where country_code is countries/AU; sort by percent(is_open_access) desc;
   created: 04-09-2024
   notes:
     - demo_priority_1
@@ -90,7 +89,7 @@
     get_rows: institutions
     filter_aggs:
       - column_id: country_code
-        value: au
+        value: countries/AU
     sort_by_column: percent(is_open_access)
     sort_by_order: desc
 
@@ -119,7 +118,7 @@
 
 
 
-- oql: using works where authorships.countries is ua; get authors where affiliations.institution.id is I859038795;
+- oql: using works where authorships.countries is countries/UA; get authors where affiliations.institution.id is institutions/I859038795;
   created: 04-09-2024
   notes:
     - demo_priority_1
@@ -131,7 +130,7 @@
     get_rows: authors
     filter_works:
       - column_id: authorships.countries
-        value: ua
+        value: countries/UA
     filter_aggs:
       - column_id: affiliations.institution.id
-        value: I859038795
+        value: institutions/I859038795
