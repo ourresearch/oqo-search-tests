@@ -42,7 +42,7 @@
 
 
 
-- oql: get works where type is types/article and publication_year > 2013
+- oql: get works where type is types/article and publication_year is greater than 2013
   created: 03-09-2024
   notes: two filters
   natLang:
@@ -54,7 +54,7 @@
       - column_id: type
         value: types/article
       - column_id: publication_year
-        operator: ">"
+        operator: is greater than
         value: 2013
 
 
@@ -97,7 +97,7 @@
 
 
 
-- oql: get authors where has_orcid is true and affiliations.institution.country_code is br; show count;
+- oql: get authors where has_orcid is true and affiliations.institution.country_code is br;
   created: 04-09-2024
   notes:
     - demo_priority_1
@@ -111,8 +111,6 @@
         value: true
       - column_id: affiliations.institution.country_code
         value: br
-    show_columns:
-      - count
 
 
 
