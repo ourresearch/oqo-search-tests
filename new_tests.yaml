@@ -1,5 +1,5 @@
 ---
-- oql: get works
+- oql: get works;
   created: 03-09-2024
   notes: starting place
   natLang:
@@ -10,7 +10,7 @@
 
 
 # leave lots of spaces between stories to make them easier to find
-- oql: get works where type is types/article
+- oql: get works where type is types/article;
   created: 03-09-2024
   notes: null
   natLang:
@@ -26,7 +26,7 @@
 
 
 
-- oql: get works where type is not types/article
+- oql: get works where type is not types/article;
   created: 03-09-2024
   notes: negate filter
   natLang:
@@ -42,7 +42,7 @@
 
 
 
-- oql: get works where type is types/article and publication_year is greater than 2013
+- oql: get works where type is types/article and publication_year is greater than 2013;
   created: 03-09-2024
   notes: two filters
   natLang:
