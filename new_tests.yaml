@@ -116,7 +116,7 @@
 
 
 
-- oql: using works where authorships.countries is countries/UA; get authors where affiliations.institution.id is institutions/I859038795;
+- oql: using works where authorships.countries is countries/UA; get authors where last_known_institutions.id is institutions/I859038795;
   created: 04-09-2024
   notes:
     - demo_priority_1
