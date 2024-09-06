@@ -130,5 +130,5 @@
       - column_id: authorships.countries
         value: countries/UA
     filter_aggs:
-      - column_id: affiliations.institution.id
+      - column_id: last_known_institutions.id
         value: institutions/I859038795
