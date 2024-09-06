@@ -78,7 +78,7 @@
 
 
 
-- oql: get institutions where country_code is countries/AU; sort by percent(is_open_access) desc;
+- oql: get institutions where country_code is countries/AT; sort by percent(is_open_access) desc;
   created: 04-09-2024
   notes:
     - demo_priority_1
@@ -89,7 +89,7 @@
     get_rows: institutions
     filter_aggs:
       - column_id: country_code
-        value: countries/AU
+        value: countries/AT
     sort_by_column: percent(is_open_access)
     sort_by_order: desc
 
