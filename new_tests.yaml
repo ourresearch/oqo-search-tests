@@ -129,6 +129,8 @@
     filter_works:
       - column_id: authorships.countries
         value: countries/UA
+      - column_id: authorships.institutions.id
+        value: institutions/I859038795
     filter_aggs:
       - column_id: last_known_institutions.id
         value: institutions/I859038795
