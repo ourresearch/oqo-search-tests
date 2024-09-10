@@ -116,7 +116,7 @@
 
 
 
-- oql: using works where authorships.countries is countries/UA; get authors where affiliations.institution.id is institutions/I859038795;
+- oql: using works where authorships.countries is countries/UA and authorships.institutions.id is institutions/I859038795; get authors where last_known_institutions.id is institutions/I859038795;
   created: 04-09-2024
   notes:
     - demo_priority_1
@@ -129,8 +129,10 @@
     filter_works:
       - column_id: authorships.countries
         value: countries/UA
+      - column_id: authorships.institutions.id
+        value: institutions/I859038795
     filter_aggs:
-      - column_id: affiliations.institution.id
+      - column_id: last_known_institutions.id
         value: institutions/I859038795
 
 
