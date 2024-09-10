@@ -132,3 +132,1296 @@
     filter_aggs:
       - column_id: affiliations.institution.id
         value: institutions/I859038795
+
+
+
+
+- oql: get works where id is 1775749144;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: id
+        value: 1775749144
+
+
+
+
+- oql: get works where id is works/w1775749144;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: id
+        value: works/w1775749144
+
+
+
+- oql: get works where doi is 10.1016/s0021-9258(19)52451-6;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: doi
+        value: 10.1016/s0021-9258(19)52451-6
+
+
+
+- oql: get works where doi is 10.1016/s0021-9258(19)52451-6;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: doi
+        value: 10.1016/s0021-9258(19)52451-6
+
+
+
+- oql: get works where primary_topic.id is topics/T11881;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: primary_topic.id
+        value: topics/T11881
+
+
+
+- oql: get works where keywords.id is keywords/diagnosis;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: keywords.id
+        value: keywords/diagnosis
+
+
+
+
+- oql: get works where primary_topic.subfield.id is subfields/3312;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: primary_topic.subfield.id
+        value: subfields/3312
+
+
+
+
+- oql: get works where primary_topic.field.id is fields/27;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: primary_topic.field.id
+        value: fields/27
+
+
+
+- oql: get works where primary_topic.domain.id is domains/3;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: primary_topic.domains.id
+        value: domains/3
+
+
+
+- oql: get works where authorships.institutions.id is institutions/I27837315;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: authorships.institutions.id
+        value: institutions/I27837315
+
+
+
+- oql: get works where cited_by_count is greater than 100;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: cited_by_count
+        operator: is greater than
+        value: 100
+
+
+
+
+- oql: get works where authorships.institutions.ror is 00jmfr291;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: authorships.institutions.ror
+        value: 00jmfr291
+
+
+
+- oql: get works where authorships.author.id is authors/A5010062957;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: authorships.author.id
+        value: A5010062957
+
+
+
+- oql: get works where authorships.author.orcid is 0000-0001-8278-6729;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: authorships.author.orcid
+        value: 0000-0001-8278-6729
+
+
+
+
+- oql: get works where open_access.is_oa is true;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: open_access.is_oa
+        value: true
+
+
+
+
+- oql: get works where open_access.oa_status is gold;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: open_access.oa_status
+        value: gold
+
+
+
+- oql: get works where authorships.countries is countries/USA;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: authorships.countries
+        value: countries/USA
+
+
+
+
+- oql: get works where authorships.institutions.continent is continents/Q48;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: authorships.institutions.continent
+        value: continents/Q48
+
+
+
+
+- oql: get works where authorships.institutions.is_global_south is true;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: authorships.institutions.is_global_south
+        value: true
+
+
+
+- oql: get works where authorships.institutions.type is institution-types/education;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: authorships.institutions.type
+        value: institution-types/education
+
+
+
+- oql: get works where primary_location.source.id is sources/S4306525036;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: primary_location.source.id
+        value: sources/S4306525036
+
+
+
+- oql: get works where primary_location.source.issn is 1556-5068;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: primary_location.source.issn
+        value: 1556-5068
+
+
+
+- oql: get works where primary_location.source.type is source-types/journal;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: primary_location.source.type
+        value: source-types/journal
+
+
+
+- oql: get works where primary_location.source.is_in_doaj is true;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: primary_location.source.is_in_doaj
+        value: true
+
+
+
+- oql: get works where primary_location.source.is_oa is true;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: primary_location.source.is_oa
+        value: true
+
+
+
+- oql: get works where type is types/dataset;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: type
+        value: types/dataset
+
+
+
+
+
+- oql: get works where publication_year is 2022;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: publication_year
+        operator: is
+        value: 2022
+
+
+
+
+- oql: get works where language is languages/en;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: language
+        value: languages/en
+
+
+
+
+- oql: get works where sustainable_development_goals.id is sdgs/1;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: sustainable_development_goals.id
+        value: sdgs/1
+
+
+
+
+- oql: get works where display_name.search contains diabetes;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: works
+    filter_works:
+      - column_id: display_name.search
+        operator: contains
+        value: diabetes
+
+
+
+- oql: get authors where id is authors/A5010062957;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: authors
+    filter_aggs:
+      - column_id: id
+        value: authors/A5010062957
+
+
+
+- oql: get authors where ids.orcid is 0000-0002-4465-7034;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: authors
+    filter_aggs:
+      - column_id: ids.orcid
+        value: 0000-0002-4465-7034
+
+
+
+
+- oql: get authors where display_name.search contains "Jason Priem";
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: authors
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: Jason Priem
+
+
+
+- oql: get authors where affiliations.institution.id is institutions/I27837315;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: authors
+    filter_aggs:
+      - column_id: affiliations.institution.id
+        value: institutions/I27837315
+
+
+
+
+- oql: get authors where affiliations.institution.type is institution-types/education;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: authors
+    filter_aggs:
+      - column_id: affiliations.institution.type
+        value: institution-types/education
+
+
+
+
+- oql: get authors where affiliations.institution.country_code is countries/CN;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: authors
+    filter_aggs:
+      - column_id: affiliations.institution.country_code
+        value: countries/CN
+
+
+
+
+- oql: get authors where last_known_institutions.id is institutions/I27837315;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: authors
+    filter_aggs:
+      - column_id: affiliations.institution.id
+        value: institutions/I27837315
+
+
+
+
+- oql: get authors where last_known_institutions.type is institution-types/education;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: authors
+    filter_aggs:
+      - column_id: affiliations.institution.type
+        value: institution-types/education
+
+
+
+
+- oql: get authors where last_known_institutions.country_code is countries/CN;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: authors
+    filter_aggs:
+      - column_id: affiliations.institution.country_code
+        value: countries/CN
+
+
+
+
+- oql: get authors where has_orcid is true;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: authors
+    filter_aggs:
+      - column_id: has_orcid
+        value: true
+
+
+
+
+- oql: get authors where display_name_alternatives is "Priem Jason";
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: authors
+    filter_aggs:
+      - column_id: display_name_alternatives
+        value: Priem Jason
+
+
+
+
+- oql: get concepts where id is concepts/C41008148;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: concepts
+    filter_aggs:
+      - column_id: id
+        value: C41008148
+
+
+
+
+- oql: get concepts where display_name.search contains physics;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: concepts
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: physics
+
+
+
+
+- oql: get continents where display_name.search contains America;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: continents
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: America
+
+
+
+
+- oql: get continents where id is continents/Q15;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: continents
+    filter_aggs:
+      - column_id: id
+        operator: is
+        value: continents/Q15
+
+
+
+- oql: get countries where id is countries/GB;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: countries
+    filter_aggs:
+      - column_id: id
+        value: countries/GB
+
+
+
+
+
+- oql: get countries where display_name.search contains Korea;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: countries
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: Korea
+
+
+
+- oql: get countries where country_code is ES;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: countries
+    filter_aggs:
+      - column_id: country_code
+        value: ES
+
+
+
+
+- oql: get countries where continent is continent/Q46;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: countries
+    filter_aggs:
+      - column_id: continent
+        value: continent/Q46
+
+
+
+- oql: get domains where id is domains/15;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: domains
+    filter_aggs:
+      - column_id: id
+        value: domains/15
+
+
+
+
+- oql: get domains where display_name.search contains science;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: domains
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: science
+
+
+
+
+
+- oql: get fields where display_name.search contains science;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: fields
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: science
+
+
+
+
+- oql: get fields where id is fields/27;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: fields
+    filter_aggs:
+      - column_id: id
+        value: fields/27
+
+
+
+
+- oql: get fields where domain is domains/3;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: fields
+    filter_aggs:
+      - column_id: domain
+        value: domains/3
+
+
+
+
+- oql: get funders where id is funders/F4320321001;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: funders
+    filter_aggs:
+      - column_id: id
+        value: funders/F4320321001
+
+
+
+- oql: get funders where display_name.search contains foundation;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: funders
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: foundation
+
+
+
+- oql: get funders where country_code is ES;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: funders
+    filter_aggs:
+      - column_id: country_code
+        value: ES
+
+
+
+
+- oql: get institution-types where id is institution-types/education;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: institution-types
+    filter_aggs:
+      - column_id: id
+        value: institution-types/education
+
+
+
+- oql: get institution-types where display_name.search contains government;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: institution-types
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: government
+
+
+
+
+- oql: get institutions where display_name.search contains university;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: institutions
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: university
+
+
+
+
+- oql: get institutions where id is institutions/I154526488;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: institutions
+    filter_aggs:
+      - column_id: id
+        value: institutions/I154526488
+
+
+
+
+- oql: get institutions where country_code is GB;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: institutions
+    filter_aggs:
+      - column_id: country_code
+        value: GB
+
+
+
+
+- oql: get institutions where type is institution-types/education;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: institutions
+    filter_aggs:
+      - column_id: type
+        value: institution-types/education
+
+
+
+
+- oql: get keywords where id is keywords/multiculturalism;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: keywords
+    filter_aggs:
+      - column_id: id
+        value: keywords/multiculturalism
+
+
+
+
+- oql: get keywords where display_name.search contains science;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: keywords
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: science
+
+
+
+
+- oql: get languages where display_name.search contains Finnish;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: languages
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: Finnish
+
+
+
+
+- oql: get languages where id is languages/id;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: languages
+    filter_aggs:
+      - column_id: id
+        value: languages/id
+
+
+
+
+- oql: get licenses where id is licenses/cc-by;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: licenses
+    filter_aggs:
+      - column_id: id
+        value: licenses/cc-by
+
+
+
+- oql: get licenses where display_name.search contains cc-by;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: licenses
+    filter_aggs:
+      - column_id: id
+        operator: contains
+        value: cc-by
+
+
+
+
+- oql: get publishers where display_name.search contains Elsevier;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: publishers
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: Elsevier
+
+
+
+
+- oql: get publishers where id is publishers/P4310319965;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: publishers
+    filter_aggs:
+      - column_id: id
+        value: publishers/P4310319965
+
+
+
+- oql: get publishers where country_code is CA;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: publishers
+    filter_aggs:
+      - column_id: country_code
+        value: CA
+
+
+
+
+
+- oql: get sdgs where id is sdgs/1;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: sdgs
+    filter_aggs:
+      - column_id: id
+        value: sdgs/1
+
+
+
+
+- oql: get sdgs where display_name.search contains equality;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: sdgs
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: equality
+
+
+
+
+- oql: get source-types where display_name.search contains repository;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: source-types
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: repository
+
+
+
+- oql: get source-types where id is source-types/conference;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: source-types
+    filter_aggs:
+      - column_id: id
+        value: source-types/conference
+
+
+
+- oql: get sources where id is sources/S4306525036;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: sources
+    filter_aggs:
+      - column_id: id
+        value: sources/S4306525036
+
+
+
+- oql: get sources where display_name.search contains pubmed;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: sources
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: pubmed
+
+
+
+
+- oql: get sources where host_organization is institutions/I1299303238;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: sources
+    filter_aggs:
+      - column_id: host_organization
+        value: institutions/I1299303238
+
+
+
+
+- oql: get sources where host_organization_name is ChemInform;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: sources
+    filter_aggs:
+      - column_id: host_organization_name
+        value: ChemInform
+
+
+
+
+- oql: get sources where is_oa is true;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: sources
+    filter_aggs:
+      - column_id: is_oa
+        value: true
+
+
+
+- oql: get sources where is_in_doaj is true;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: sources
+    filter_aggs:
+      - column_id: is_in_doaj
+        value: true
+
+
+
+
+- oql: get sources where apc_usd is greater than 1500;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: sources
+    filter_aggs:
+      - column_id: apc_usd
+        operator: is greater than
+        value: 1500
+
+
+
+
+- oql: get sources where type is source-types/other;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: sources
+    filter_aggs:
+      - column_id: type
+        value: source-types/other
+
+
+
+
+- oql: get subfields where id is subfields/3312;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: subfields
+    filter_aggs:
+      - column_id: id
+        value: subfields/3312
+
+
+
+
+- oql: get subfields where display_name.search contains politic;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: subfields
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: politic
+
+
+
+- oql: get subfields where field is fields/22;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: subfields
+    filter_aggs:
+      - column_id: field
+        value: fields/22
+
+
+
+
+- oql: get topics where id is topics/T11881;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: topics
+    filter_aggs:
+      - column_id: id
+        value: topics/T11881
+
+
+
+
+- oql: get topics where display_name.search contains history;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: topics
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: history
+
+
+
+
+
+- oql: get topics where subfield is subfields/33;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: topics
+    filter_aggs:
+      - column_id: subfield
+        value: subfields/33
+
+
+
+
+- oql: get types where id is types/article;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: topics
+    filter_aggs:
+      - column_id: id
+        value: types/article
+
+
+
+
+- oql: get types where display_name.search contains book;
+  created: 09-09-2024
+  notes:
+    - filter
+  natLang:
+  query:
+    get_rows: topics
+    filter_aggs:
+      - column_id: display_name.search
+        operator: contains
+        value: book
+
+
+
+
+
+
+
+
+
