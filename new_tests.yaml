@@ -253,7 +253,7 @@
   query:
     get_rows: works
     filter_works:
-      - column_id: primary_topic.domains.id
+      - column_id: primary_topic.domain.id
         value: domains/3
 
 
@@ -353,7 +353,7 @@
 
 
 
-- oql: get works where authorships.countries is countries/USA;
+- oql: get works where authorships.countries is countries/US;
   created: 09-09-2024
   notes:
     - filter
