@@ -308,7 +308,7 @@
     get_rows: works
     filter_works:
       - column_id: authorships.author.id
-        value: A5010062957
+        value: authors/A5010062957
 
 
 
