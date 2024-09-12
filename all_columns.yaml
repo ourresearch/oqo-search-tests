@@ -357,7 +357,6 @@
     get_rows: works
     filter_works:
       - column_id: publication_year
-        operator: is
         value: 2022
 
 
