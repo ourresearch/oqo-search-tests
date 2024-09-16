@@ -1048,7 +1048,7 @@
     filter_aggs:
       - column_id: id
         operator: contains
-        value: cc-by
+        value: cc by
 
 
 
