@@ -683,49 +683,6 @@
 
 
 
-- oql: get authors where display_name_alternatives is "Priem Jason";
-  created: 09-09-2024
-  notes:
-    - filter
-  natLang:
-  query:
-    get_rows: authors
-    filter_aggs:
-      - column_id: display_name_alternatives
-        value: Priem Jason
-
-
-
-
-- oql: get concepts where id is concepts/C41008148;
-  created: 09-09-2024
-  notes:
-    - filter
-  natLang:
-  query:
-    get_rows: concepts
-    filter_aggs:
-      - column_id: id
-        value: C41008148
-
-
-
-
-- oql: get concepts where display_name.search contains physics;
-  created: 09-09-2024
-  notes:
-    - filter
-  natLang:
-  query:
-    get_rows: concepts
-    filter_aggs:
-      - column_id: display_name.search
-        operator: contains
-        value: physics
-
-
-
-
 - oql: get continents where display_name.search contains America;
   created: 09-09-2024
   notes:
