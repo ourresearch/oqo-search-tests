@@ -459,16 +459,16 @@
 
 
 
-- oql: get works where primary_location.source.is_oa is true;
-  created: 09-09-2024
-  notes:
-    - filter
-  natLang:
-  query:
-    get_rows: works
-    filter_works:
-      - column_id: primary_location.source.is_oa
-        value: true
+# - oql: get works where primary_location.source.is_oa is true;
+#   created: 09-09-2024
+#   notes:
+#     - filter
+#   natLang:
+#   query:
+#     get_rows: works
+#     filter_works:
+#       - column_id: primary_location.source.is_oa
+#         value: true
 
 
 
