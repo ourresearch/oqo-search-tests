@@ -495,7 +495,7 @@
   query:
     get_rows: authors
     filter_aggs:
-      - column_id: affiliations.institution.id
+      - column_id: last_known_institutions.id
         value: institutions/I27837315
 
 
@@ -509,7 +509,7 @@
   query:
     get_rows: authors
     filter_aggs:
-      - column_id: affiliations.institution.type
+      - column_id: last_known_institutions.type
         value: institution-types/education
 
 
@@ -523,7 +523,7 @@
   query:
     get_rows: authors
     filter_aggs:
-      - column_id: affiliations.institution.country_code
+      - column_id: last_known_institutions.country_code
         value: countries/CN
 
 
@@ -566,7 +566,7 @@
     get_rows: concepts
     filter_aggs:
       - column_id: id
-        value: C41008148
+        value: concepts/C41008148
 
 
 
@@ -949,7 +949,7 @@
   query:
     get_rows: licenses
     filter_aggs:
-      - column_id: id
+      - column_id: display_name.search
         operator: contains
         value: cc-by
 
@@ -1259,7 +1259,7 @@
     - filter
   natLang:
   query:
-    get_rows: topics
+    get_rows: types
     filter_aggs:
       - column_id: id
         value: types/article
@@ -1273,7 +1273,7 @@
     - filter
   natLang:
   query:
-    get_rows: topics
+    get_rows: types
     filter_aggs:
       - column_id: display_name.search
         operator: contains
