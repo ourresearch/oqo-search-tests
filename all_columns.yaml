@@ -644,7 +644,7 @@
 
 
 
-- oql: get countries where country_code is ES;
+- oql: get countries where id is countries/ES;
   created: 09-09-2024
   notes:
     - filter
@@ -652,8 +652,8 @@
   query:
     get_rows: countries
     filter_aggs:
-      - column_id: country_code
-        value: ES
+      - column_id: id
+        value: countries/ES
 
 
 
