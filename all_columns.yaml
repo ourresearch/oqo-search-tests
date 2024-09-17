@@ -441,7 +441,7 @@
     filter_aggs:
       - column_id: display_name.search
         operator: contains
-        value: Jason Priem
+        value: "Jason Priem"
 
 
 
@@ -552,7 +552,7 @@
     get_rows: authors
     filter_aggs:
       - column_id: display_name_alternatives
-        value: Priem Jason
+        value: "Priem Jason"
 
 
 
