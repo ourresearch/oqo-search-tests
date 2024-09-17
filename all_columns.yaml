@@ -610,7 +610,6 @@
     get_rows: continents
     filter_aggs:
       - column_id: id
-        operator: is
         value: continents/Q15
 
 
