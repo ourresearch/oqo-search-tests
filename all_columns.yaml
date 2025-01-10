@@ -557,35 +557,6 @@
 
 
 
-- oql: get concepts where id is concepts/C41008148;
-  created: 09-09-2024
-  notes:
-    - filter
-  natLang:
-  query:
-    get_rows: concepts
-    filter_aggs:
-      - column_id: id
-        value: concepts/C41008148
-
-
-
-
-- oql: get concepts where display_name.search contains physics;
-  created: 09-09-2024
-  notes:
-    - filter
-  natLang:
-  query:
-    get_rows: concepts
-    filter_aggs:
-      - column_id: display_name.search
-        operator: contains
-        value: physics
-
-
-
-
 - oql: get continents where display_name.search contains America;
   created: 09-09-2024
   notes:
@@ -1249,34 +1220,6 @@
       - column_id: subfield
         value: subfields/33
 
-
-
-
-- oql: get types where id is types/article;
-  created: 09-09-2024
-  notes:
-    - filter
-  natLang:
-  query:
-    get_rows: types
-    filter_aggs:
-      - column_id: id
-        value: types/article
-
-
-
-
-- oql: get types where display_name.search contains book;
-  created: 09-09-2024
-  notes:
-    - filter
-  natLang:
-  query:
-    get_rows: types
-    filter_aggs:
-      - column_id: display_name.search
-        operator: contains
-        value: book
 
 
 
