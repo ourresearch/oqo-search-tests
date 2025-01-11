@@ -1209,7 +1209,7 @@
 
 
 
-- oql: get topics where subfield is subfields/33;
+- oql: get topics where subfield is subfields/2725;
   created: 09-09-2024
   notes:
     - filter
@@ -1218,7 +1218,7 @@
     get_rows: topics
     filter_aggs:
       - column_id: subfield
-        value: subfields/33
+        value: subfields/2725
 
 
 
